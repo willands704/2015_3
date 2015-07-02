@@ -1,0 +1,23 @@
+﻿@charset "UTF-8";
+/*--------------------------------------
+clearfix
+↓これはclear:bothを書ける箱がない時用に
+疑似要素で箱作ってそれにclear:bothを書いています
+使わないとclearできないシチュエーションでお使い下さい
+使いたい場所の要素のclass名にclearfixを追加にします。
+------------------------------------------*/
+.clearfix:after{
+content:".";
+display:block;
+height:0px;
+clear:both;
+visibility:hidden;
+}
+/*-----END clearfix------------*/
+
+/*----clearできる箱がある場合---- */
+.clear{
+clear:both;
+}
+/*----END clearできる箱がある場合---- */
+
