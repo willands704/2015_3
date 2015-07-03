@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /*--------------------------------------
 clearfix
 ↓これはclear:bothを書ける箱がない時用に
@@ -22,4 +22,8 @@ clear:both;
 /*----END clearできる箱がある場合---- */
 h3{
  color:blue;
+}
+
+h3 + h3{
+color:red;
 }
