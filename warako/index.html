@@ -3,9 +3,21 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="index.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="jquery.bxslider.css" charset="UTF-8">
 		<title>猪虎太郎</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="./js/jquery.bxslider.min.js"></script>
 		<script src="./index.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#bxslider').bxSlider({
+					auto:true,
+					speed:2000,
+					mode: 'fade',
+					captions: false
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="wrap">
@@ -44,12 +56,21 @@
 			</div>
 			
 			<div class="main">
-				<img class="image-top" src="img/960_300_1.jpg">
+				<!--<img class="image-top" src="img/960_300_1.jpg">-->
+				<ul id="bxslider">
+					<li><img class="bx-image" src="image/slide1.jpg"></li>
+					<li><img class="bx-image" src="image/slide2.jpg"></li>
+					<li><img class="bx-image" src="image/slide3.jpg"></li>
+					<li><img class="bx-image" src="image/slide4.jpg"></li>
+				</ul>
 			</div>
 			
 			<div class="content1">
-				<p class="content1-text1">キャッチコピー！</p>
-				<p class="content1-text1">つかみの文章！</p>
+				<p class="content1-text1">ビジネス × 笑い ＝</p>
+				<p class="content1-text2">問題解決力</p>
+				<p class="content1-text3"><span class="red">笑い</span>がビジネスに効くことをご存知ですか？<br>
+				人間関係と自由な発想にお困りのあなたに！<br>
+				笑いで築く職場環境！</p>
 			</div>
 			
 			<div class="main">
@@ -57,19 +78,31 @@
 			</div>
 			
 			<div class="content2">
-				<p class="content1-text1">そんな悩みをズバッと解決！</p>
+				<p class="content1-text1">そんな悩みをスパッと解決！</p>
+				<p class="content1-text1">プロの構成作家が教えます！</p>
 			</div>
 			
-			<div class="content3-title">
+			<div class="content3-title-image">
 				<img src="img/about.gif">
 			</div>
 			
 			<div class="content3 clearfix">
 			
 				<div class="content3-top">
-					<p>testtest</p>
+					<p class="content3-text1">ビジネス活動をしていると社内外を問わず、<br>
+					日々様々な壁にぶつかります。<br>
+					「自分と顧客の壁」、「自分とプレゼンテーションの相手との壁」<br>
+					「自分と上司の壁」、「自分と部下の壁」等々…。<br>
+					その壁を取り除くのは笑いのエネルギーです。<br>
+					「面白い人」だと印象付ければ、<br>
+					自分の話に対しての反応が変わります。<br>
+					競合が多いビジネスシーンでは、<br>
+					まず、自分自身を印象付ける事が必要なケースも<br>
+					多くなります。<br>
+					そこで有効となるのが笑いなのです。</p>
 				</div>
 				<div class="content3-left">
+						<p class="content3-title">5つのポイント</p>
 						<p>1.最初の3分で全てが決まる</p>
 						<p>2.講師、ベテランに営業力はない</p>
 						<p>3.営業力は聞き上手</p>
