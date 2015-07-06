@@ -1,0 +1,487 @@
+@charset "UTF-8N";
+
+/*リセットCSS*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+
+}
+
+/*ボディー*/
+body{
+margin:0;
+padding:0;
+font-family:"MS 明朝",serif;
+}
+
+/*全体*/
+.wrap{
+max-width:1800px;
+width:100%;
+margin:0 auto;
+
+}
+
+/*サブナビ*/
+
+.subnav-wrap{
+	width:960px;
+	margin:10px auto;
+}
+
+.top-nav{
+	width:68%;
+	font-size:0px;
+	float:left;
+}
+
+.subnav{
+	width:32%;
+	float:right;
+}
+
+.subnav ul{
+
+}
+
+.subnav ul li{
+	list-style:none;
+}
+
+.subnav ul li a{
+	float:left;
+	width:150px;
+	color:#ffffff;
+	background:rgb(45,71,146);
+	line-height:25px;
+	text-decoration:none;
+	text-align:center;
+	border-right:1px solid #ffffff;
+	display:block;
+	border-radius:12.5px 0px 0px 12.5px;
+}
+
+.subnav ul li:last-child a{
+	border-radius:0px 12.5px 12.5px 0px;
+}
+
+/*サブナビホバー（プログラム実装後削除）*/
+.subnav ul li a:hover{
+	background:rgb(36,195,230);
+	color:#ffffff;
+}
+
+/*ヘッダー*/
+.header-wrap{
+	width:960px;
+	margin:10px auto;
+}
+
+/*わら講ロゴ*/
+.header-left{
+	width:15%;
+	height:170px;
+	text-align:center;
+	float:left;
+/*	background:rgb(45,71,146);*/
+}
+
+/*ビジネス*/
+.header-right{
+	width:80%;
+	text-align:right;
+	height:170px;
+	float:right;
+/*	background:rgb(45,71,146);*/
+}
+
+
+/*メインナビ*/
+
+.nav{
+	margin-bottom:10px;
+}
+
+.nav ul{
+
+}
+
+.nav ul li{
+	list-style:none;
+
+}
+
+.nav ul li a{
+	color:#ffffff;
+	display:block;
+	width:calc(100% / 4);
+	float:left;
+	line-height:50px;
+	text-align:center;
+	border-top:1px solid #ffffff;
+	border-right:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	text-decoration:none;
+	background:rgb(70,130,180);
+	box-sizing:border-box;
+}
+.nav ul li:last-child a{
+	border-right:none;
+	width:calc(100% / 4);
+	box-sizing:border-box;
+}
+
+
+/*ナビホバー（プログラム実装後削除）*/
+.nav ul li a:hover{
+	background:#ffffff;
+	color:#ffffff;
+}
+
+/*トップ画像*/
+.main{
+	width:100%;
+	margin:0 auto;
+}
+
+.image-top{
+	width:100%;
+	height:auto;
+}
+
+.bx-image{
+	width:100%;
+	height:auto;
+}
+
+/*コンテンツ*/
+
+/*ビジネス×笑い*/
+.content1{
+	margin:10px auto;
+	width:960px;
+	height:300px;
+
+}
+
+.content1-text1{
+	color:#000000;
+	text-align:center;
+	font-size:38px;
+}
+
+.content1-text2{
+	color:#000000;
+	text-align:center;
+	font-size:60px;
+}
+
+.content1-text3{
+	color:#000000;
+	text-align:center;
+	font-size:24px;
+}
+
+.red{
+	color:red;
+}
+
+/*そんな悩みをスパッと解決*/
+.content2{
+	margin:10px auto;
+	width:960px;
+	height:auto;
+}
+
+/*About*/
+.content3{
+	margin:0 auto;
+	width:960px;
+	background:rgb(246,142,72);
+	height:auto;
+}
+
+.content3-title-image{
+	margin:0 auto;
+	margin-top:10px;
+	width:960px;
+}
+
+.content3-top{
+	height:auto;
+}
+
+.content3-text1{
+	font-size:30px;
+	padding:15px;
+}
+
+.content3-left{
+	float:left;
+	background:#ffffff;
+	width:50%;
+}
+
+.content3-left p{
+	font-size:20px;
+	padding:10px;
+}
+
+.content3-right{
+	float:right;
+}
+
+/*講義内容*/
+.content4{
+	margin:10px auto;
+	width:960px;
+	background-image:url("img/1024_768.jpg");
+	height:100%;
+}
+
+.content4 p{
+	margin:0 auto;
+	width:90%;
+	height:90%;
+	padding:10px;
+	background:#ffffff;
+	opacity:0.8;
+}
+
+/*受講者の声*/
+.content5{
+	margin:10px auto;
+	width:960px;
+	background:#ffffff;
+	height:auto;
+}
+
+.content5-box1{
+	margin-bottom:10px;
+	margin-right:auto;
+	width:90%;
+	height:100px;
+	background:gold;
+}
+
+.content5-box2{
+	margin-bottom:10px;
+	margin-left:auto;
+	width:90%;
+	height:100px;
+	background:gold;
+}
+
+.content5-box3{
+	margin-bottom:10px;
+	margin-right:auto;
+	width:90%;
+	height:100px;
+	background:gold;
+}
+
+.content5-box4{
+	margin-bottom:10px;
+	margin-left:auto;
+	width:90%;
+	height:100px;
+	background:gold;
+}
+
+/*講師紹介*/
+.content6{
+	margin:10px auto;
+	width:960px;
+	background:rgb(45,71,146);
+	height:300px;
+}
+
+/*お問い合わせフォーム*/
+.content7{
+	margin:10px auto;
+	width:960px;
+	background:rgb(45,71,146);
+	height:300px;
+}
+
+.content8{
+	margin:10px auto;
+	width:960px;
+	background:rgb(45,71,146);
+	height:300px;
+}
+
+.content9{
+	margin:10px auto;
+	width:960px;
+	background:#cccccc;
+	height:300px;
+}
+
+.content9 p{
+	padding:10px;
+}
+
+/*フッターエリア*/
+.footer{
+	width:100%;
+	background:rgb(36,195,230);
+	height:100px;
+}
+
+address{
+	text-align:right;
+	background:rgb(36,195,230);
+}
+
+/*スマホ*/
+@media screen and (max-width:480px){/*480px以下*/
+
+.body{
+	min-height:100%;/*高さの最小値を決めることで高さを確保させます。デバイスサイズに応じて数値を変更させると、背景画像もレスポンシブに変化します*/
+	min-width:300px;
+}
+
+.nav ul{
+	display:none;
+}
+
+.nav ul li a{
+width:100%;
+line-height:30px;
+}
+
+.nav ul li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul li:last-child a{
+border-top:none;
+width:100%;
+}
+
+.content1{
+	margin:10px auto;
+	width:100%;
+	height:300px;
+
+}
+
+.content2{
+	margin:10px auto;
+	width:100%;
+	height:300px;
+}
+
+.content3{
+	margin:10px auto;
+	width:100%;
+	background:rgb(45,71,146);
+	height:300px;
+}
+
+.content4{
+	margin:10px auto;
+	width:100%;
+	background:rgb(45,71,146);
+	height:300px;
+}
+
+.content5{
+	margin:10px auto;
+	width:100%;
+	background:rgb(45,71,146);
+	height:300px;
+}
+
+.content6{
+	margin:10px auto;
+	width:100%;
+	background:rgb(45,71,146);
+	height:300px;
+}
+
+}
+
+/*スマホ用メニューボタン*/
+.menuBtn{
+	width: 42px;
+	height:42px;
+	display: block;
+	margin:0;
+	position: absolute;
+
+}
+
+.menuBtn span{
+	display: block;
+	background: #000;
+	width: 24px;
+	height: 2px;
+	position: absolute;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+.menuBtn span:first-child {
+	top: 12px;
+}
+.menuBtn span:nth-child(2) {
+	margin-top: -1px;
+	top: 50%;
+}
+.menuBtn span:last-child {
+	bottom: 12px;
+}
+
+.menuBtn.active span:first-child {
+	-webkit-transform: translateY(8px) rotate(135deg);
+	-moz-transform: translateY(8px) rotate(135deg);
+	-ms-transform: translateY(8px) rotate(135deg);
+	transform: translateY(8px) rotate(135deg);
+}
+.menuBtn.active span:nth-child(2) {
+	opacity: 0;
+}
+.menuBtn.active span:last-child {
+	-webkit-transform: translateY(-8px) rotate(225deg);
+	-moz-transform: translateY(-8px) rotate(225deg);
+	-ms-transform: translateY(-8px) rotate(255deg);
+	transform: translateY(-8px) rotate(225deg);
+}
+/*ここまで*/
+
+/*クリアーフィックス*/
+.clearfix:after{
+content:".";
+display:block;
+height:0px;
+clear:both;
+visibility:hidden;
+}
