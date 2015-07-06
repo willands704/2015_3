@@ -88,27 +88,184 @@ margin:0 auto;
 /*ヘッダー*/
 .header-wrap{
 	width:960px;
-	margin:10px auto;
+	margin:20px auto;
 }
 
 /*わら講ロゴ*/
 .header-left{
-	width:15%;
+	width:22%;
+	margin-top:0px;
 	height:170px;
 	text-align:center;
 	float:left;
-/*	background:rgb(45,71,146);*/
 }
+/*	background:rgb(45,71,146);*/
 
-/*ビジネス*/
+
+/*ビジネス（タイトルロゴjsあり）　ここから*/
 .header-right{
-	width:80%;
+	width:78%;
+	height:170px; 
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align:right;
+	float:right;
+
+/*	width:80%;
 	text-align:right;
 	height:170px;
 	float:right;
-/*	background:rgb(45,71,146);*/
+	background:rgb(45,71,146);*/
 }
 
+.t_logo{
+	width:100%;
+	height:60%; 
+	text-align:right;
+	margin-bottom:0px;
+/*	display:flex;floatの代わりに横並び*/
+/*	justify-content: right;均等に右揃え*/
+}
+
+#box1{
+	display:bock;
+	float:left; 
+}
+
+#box2{
+	display:bock;
+	float:left; 
+}
+
+#box3{
+	display:bock;
+	float:left; 
+}
+
+#box4{
+	display:bock;
+	float:left; 
+}
+
+#box5{
+	display:bock;
+	float:left; 
+}
+
+#box6{
+	display:bock;
+	float:left; 
+}
+
+#box7{
+	display:bock;
+	float:left; 
+}
+
+#box8{
+	display:bock;
+	float:left; 
+}
+
+#box9{
+	display:bock;
+	float:left; 
+}
+
+#box10{
+	display:bock;
+	float:left; 
+}
+
+#box11{
+	display:bock;
+	float:left; 
+}
+
+#box12{
+	display:bock;
+	float:left; 
+}
+
+#box13{
+	display:bock;
+	float:left; 
+}
+
+#box14{
+	display:bock;
+	float:left; 
+}
+
+#box15{
+	display:bock;
+	float:left; 
+}
+
+#box16{
+	display:bock;
+	float:left; 
+}
+
+#box17{
+	display:bock;
+	float:left; 
+}
+
+.t_logo{
+	font-size:2.2em;
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+.box{
+	width:41px;
+	height:60px;
+	margin-right:5px;
+	color:#fff;
+	background:rgb(45,130,203);
+	text-align:center;
+	line-height:60px;
+}
+
+.nobgc{
+	width:35px;
+	height:60px;
+	color:rgb(45,130,203);
+	margin-right:2px;
+	text-align:center;
+	line-height:60px;
+	background:#fff;
+}
+
+.nobgc:last-child{
+	width:35px;
+	height:60px;
+	margin-right:2px;
+	color:rgb(45,130,203);
+	text-align:center;
+	line-height:60px;
+	background:#fff;
+}
+
+.sub_catch{
+	width:649px;
+	height:40%;
+	text-align:right;
+/*	letter-spacing: 0.1em; */
+	font-weight:bold;
+	padding-top:10px;
+	padding-left:20px;
+	padding-right:5px;
+	margin-right:0px;
+	margin-top:-20px;
+	margin-left:75px;
+	margin-bottom:0px;
+	color:#666;
+	font-size:18px;
+	border-top: 3px solid #403840	;
+	
+}
+/*ビジネス（タイトルロゴjsあり）　ここまで*/
 
 /*メインナビ*/
 
@@ -149,12 +306,9 @@ margin:0 auto;
 /*ナビホバー*/
 /*
 .nav ul li a:hover{
-
 	background:#ffffff;
 	color:rgb(45,130,203);
-
 	border:1px solid #4682b4;
-
 }
 */
 /*トップ画像*/
@@ -178,7 +332,7 @@ margin:0 auto;
 /*ビジネス×笑い*/
 .content1{
 	margin:10px auto;
-	width:960px;
+	width:100%;
 	height:300px;
 
 }
@@ -206,10 +360,16 @@ margin:0 auto;
 	font-weight:bold;
 }
 
+/*文字色*/
 .red{
 	color:red;
 }
 
+.orange{
+	color:orange;
+}
+
+/*こんな悩み抱えてませんか*/
 .content1-sub{
 	background-image:url("img/bgmain01.jpg");
 	width:1000px;
@@ -246,7 +406,7 @@ margin:0 auto;
 /*そんな悩みをスパッと解決*/
 .content2{
 	margin:10px auto;
-	width:960px;
+	width:100%;
 	height:auto;
 }
 
@@ -261,7 +421,7 @@ margin:0 auto;
 .content3{
 	margin:0 auto;
 	width:960px;
-	background-image:url("img/about.jpg");
+	background-image:url("img/about_bg.jpg");
 	height:946px;
 }
 
@@ -271,24 +431,29 @@ margin:0 auto;
 	width:960px;
 }
 
+
 .content3-top{
-	height:auto;
+	height:600px;
+	padding:10px;
 }
 
-.content3-text1{
+.content3-top p{
 	font-size:30px;
-	padding:15px;
+	padding:10px;
+	line-height:1.5em;
+	font-weight:bold;
 }
 
 .content3-left{
 	float:left;
-	background:#ffffff;
 	width:50%;
 }
 
 .content3-left p{
+	margin-left:50px;
 	font-size:20px;
-	padding:10px;
+	padding:15px;
+	font-weight:bold;
 }
 
 .content3-right{
@@ -303,13 +468,20 @@ margin:0 auto;
 	height:100%;
 }
 
+.content4-inner{
+	background:#ffffff;
+	width:90%;
+	height:80%;
+	margin:0 auto;
+	opacity:0.7;
+}
+
 .content4 p{
 	margin:0 auto;
 	width:90%;
 	height:90%;
 	padding:10px;
-	background:#ffffff;
-	opacity:0.8;
+	font-weight:bold;
 }
 
 /*受講者の声*/
