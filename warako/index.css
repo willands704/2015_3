@@ -102,7 +102,7 @@ margin:0 auto;
 /*	background:rgb(45,71,146);*/
 
 
-/*ビジネス（タイトルロゴjsあり）*/
+/*ビジネス（タイトルロゴjsあり）　ここから*/
 .header-right{
 	width:78%;
 	height:170px; 
@@ -265,6 +265,7 @@ margin:0 auto;
 	border-top: 3px solid #403840	;
 	
 }
+/*ビジネス（タイトルロゴjsあり）　ここまで*/
 
 /*メインナビ*/
 
@@ -330,7 +331,7 @@ margin:0 auto;
 /*ビジネス×笑い*/
 .content1{
 	margin:10px auto;
-	width:960px;
+	width:100%;
 	height:300px;
 
 }
@@ -358,10 +359,16 @@ margin:0 auto;
 	font-weight:bold;
 }
 
+/*文字色*/
 .red{
 	color:red;
 }
 
+.orange{
+	color:orange;
+}
+
+/*こんな悩み抱えてませんか*/
 .content1-sub{
 	background-image:url("img/bgmain01.jpg");
 	width:1000px;
@@ -398,7 +405,7 @@ margin:0 auto;
 /*そんな悩みをスパッと解決*/
 .content2{
 	margin:10px auto;
-	width:960px;
+	width:100%;
 	height:auto;
 }
 
@@ -422,6 +429,7 @@ margin:0 auto;
 	margin-top:10px;
 	width:960px;
 }
+
 
 .content3-top{
 	height:600px;
@@ -459,12 +467,20 @@ margin:0 auto;
 	height:100%;
 }
 
+.content4-inner{
+	background:#ffffff;
+	width:90%;
+	height:80%;
+	margin:0 auto;
+	opacity:0.7;
+}
+
 .content4 p{
 	margin:0 auto;
 	width:90%;
 	height:90%;
 	padding:10px;
-	opacity:0.8;
+	font-weight:bold;
 }
 
 /*受講者の声*/
