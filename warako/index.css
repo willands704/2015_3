@@ -147,15 +147,16 @@ margin:0 auto;
 
 
 /*ナビホバー*/
+/*
 .nav ul li a:hover{
 
 	background:#ffffff;
 	color:rgb(45,130,203);
 
-	border:1px solid #4682b4;
-
+	border-top:1px solid #2d82cb;
+	border-bottom:1px solid #2d82cb;
 }
-
+*/
 /*トップ画像*/
 .main{
 	width:100%;
