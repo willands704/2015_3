@@ -301,6 +301,7 @@ margin:0 auto;
 	width:960px;
 	background-image:url("img/1024_768.jpg");
 	height:100%;
+	position: relative;
 }
 
 .content4 p{
@@ -312,12 +313,31 @@ margin:0 auto;
 	opacity:0.8;
 }
 
+#curriculum{
+	position: absolute;
+	top: 155px;
+	left: 240px;
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
+}
+
 /*受講者の声*/
 .content5{
 	margin:10px auto;
 	width:960px;
 	background:#ffffff;
 	height:auto;
+	position: relative;
+}
+
+#review{
+	position: absolute;
+	top: 420px;
+	left: 275px;
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
 }
 
 .content5-box1{
@@ -353,27 +373,47 @@ margin:0 auto;
 }
 
 /*講師紹介*/
-.content6{
-	margin:10px auto;
-	width:960px;
-	background:rgb(45,71,146);
-	height:300px;
-}
-
-/*お問い合わせフォーム*/
 .content7{
 	margin:10px auto;
 	width:960px;
 	background:rgb(45,71,146);
 	height:300px;
+	position: relative;
 }
 
+#teacher{
+	position: absolute;
+	top: 70px;
+	left: 345px;
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+/*お問い合わせフォーム*/
 .content8{
 	margin:10px auto;
 	width:960px;
 	background:rgb(45,71,146);
 	height:300px;
+	position: relative;
 }
+
+#mail{
+	position: absolute;
+	top: 165px;
+	left: 280px;
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+/*.content8{
+	margin:10px auto;
+	width:960px;
+	background:rgb(45,71,146);
+	height:300px;
+}*/
 
 .content9{
 	margin:10px auto;
