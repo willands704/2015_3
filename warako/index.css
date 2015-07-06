@@ -256,8 +256,8 @@ margin:0 auto;
 .content3{
 	margin:0 auto;
 	width:960px;
-	background:rgb(246,142,72);
-	height:auto;
+	background-image:url("img/about.jpg");
+	height:946px;
 }
 
 .content3-title-image{
