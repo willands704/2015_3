@@ -126,16 +126,17 @@ margin:0 auto;
 }
 
 .nav ul li a{
-	color:rgb(45,71,146);
+	color:#ffffff;
 	display:block;
 	width:calc(100% / 4);
 	float:left;
 	line-height:50px;
 	text-align:center;
-	border-top:1px solid rgb(45,71,146);
-	border-right:1px solid rgb(45,71,146);
-	border-bottom:1px solid rgb(45,71,146);
+	border-top:1px solid #ffffff;
+	border-right:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
 	text-decoration:none;
+	background:rgb(70,130,180);
 	box-sizing:border-box;
 }
 .nav ul li:last-child a{
@@ -147,7 +148,7 @@ margin:0 auto;
 
 /*ナビホバー（プログラム実装後削除）*/
 .nav ul li a:hover{
-	background:rgb(45,71,146);
+	background:#ffffff;
 	color:#ffffff;
 }
 
