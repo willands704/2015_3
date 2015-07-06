@@ -549,3 +549,9 @@ height:0px;
 clear:both;
 visibility:hidden;
 }
+
+.ue {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
