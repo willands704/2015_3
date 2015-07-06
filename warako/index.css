@@ -66,11 +66,11 @@ margin:0 auto;
 	float:left;
 	width:150px;
 	color:#ffffff;
-	background:rgb(45,71,146);
+	background:rgb(45,130,203);
 	line-height:25px;
 	text-decoration:none;
 	text-align:center;
-	border-right:1px solid #ffffff;
+	border-right:1px solid rgb(114,171,220);
 	display:block;
 	border-radius:12.5px 0px 0px 12.5px;
 }
@@ -81,8 +81,8 @@ margin:0 auto;
 
 /*サブナビホバー（プログラム実装後削除）*/
 .subnav ul li a:hover{
-	background:rgb(36,195,230);
-	color:#ffffff;
+	background:rgb(114,171,220);
+	color:rgb(45,130,203);
 }
 
 /*ヘッダー*/
@@ -132,11 +132,11 @@ margin:0 auto;
 	float:left;
 	line-height:50px;
 	text-align:center;
-	border-top:1px solid #ffffff;
-	border-right:1px solid #ffffff;
-	border-bottom:1px solid #ffffff;
+	border-top:1px solid rgb(114,171,220);
+	border-right:1px solid rgb(114,171,220);
+	border-bottom:1px solid rgb(114,171,220);
 	text-decoration:none;
-	background:rgb(70,130,180);
+	background:rgb(45,130,203);
 	box-sizing:border-box;
 }
 .nav ul li:last-child a{
@@ -148,7 +148,12 @@ margin:0 auto;
 
 /*ナビホバー*/
 .nav ul li a:hover{
+
+	background:#ffffff;
+	color:rgb(45,130,203);
+
 	border:1px solid #4682b4;
+
 }
 
 /*トップ画像*/
@@ -181,22 +186,60 @@ margin:0 auto;
 	color:#000000;
 	text-align:center;
 	font-size:38px;
+	font-weight:bold;
 }
 
 .content1-text2{
 	color:#000000;
 	text-align:center;
-	font-size:60px;
+	font-size:100px;
+	padding:10px;
+	font-weight:bold;
 }
 
 .content1-text3{
 	color:#000000;
 	text-align:center;
-	font-size:24px;
+	font-size:20px;
+	line-height:1.2em;
+	font-weight:bold;
 }
 
 .red{
 	color:red;
+}
+
+.content1-sub{
+	background-image:url("img/bgmain01.jpg");
+	width:1000px;
+	height:690px;
+	margin:0 auto;
+	background-repeat:no-repeat;
+}
+
+.content1-sub-title{
+	font-size:50px;
+	color:#ffffff;
+	padding:60px 20px 40px 20px;
+	font-weight:bold;
+	margin-left:40px;
+}
+
+.content1-sub-text{
+	background:#ffffff;
+	font-size:20px;
+	width:450px;
+	opacity:0.7;
+	margin-top:10px;
+	margin-left:25px;
+	margin-bottom:10px;
+	padding:40px 20px 40px 20px;
+	line-height:2em;
+	font-weight:bold;
+}
+
+.content1-sub-text ul li{
+	list-style:none;
 }
 
 /*そんな悩みをスパッと解決*/
@@ -206,12 +249,19 @@ margin:0 auto;
 	height:auto;
 }
 
+.content2-text1{
+	text-align:center;
+	font-size:60px;
+	padding:10px;
+	font-weight:bold;	
+}
+
 /*About*/
 .content3{
 	margin:0 auto;
 	width:960px;
-	background:rgb(246,142,72);
-	height:auto;
+	background-image:url("img/about.jpg");
+	height:946px;
 }
 
 .content3-title-image{
