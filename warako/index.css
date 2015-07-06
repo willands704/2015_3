@@ -146,10 +146,9 @@ margin:0 auto;
 }
 
 
-/*ナビホバー（プログラム実装後削除）*/
+/*ナビホバー*/
 .nav ul li a:hover{
-	background:#ffffff;
-	color:#ffffff;
+	border:1px solid #4682b4;
 }
 
 /*トップ画像*/

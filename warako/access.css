@@ -20,7 +20,7 @@ body{
 	width: 960px;
 	height: 650px;
 	text-align: center;
-	margin: 30px 0px 30px 0px;
+	margin: 30px 0px 0px 0px;
 }
 
 #close_access{
@@ -36,6 +36,8 @@ body{
 	display: block;
 	line-height: 85px;
 	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
 	border: 1px solid #000080;
 }
 
@@ -45,11 +47,12 @@ body{
 	display: block;
 	line-height: 85px;
 	text-decoration: none;
-	color: #000080;
+	color: #fff;
+	background-color: #2E4791;
 }
 
 #close_access a:hover{
 	text-decoration: underline;
-	background-color: #2E4791;
-	color: #fff;
+	background-color: #fff;
+	color: #2E4791;
 }
