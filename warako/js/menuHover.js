@@ -1,7 +1,7 @@
 $(function(){
 	$('.nav ul li a').hover(function() {
-		$(this).stop(false, true).animate({backgroundColor: "#ffffff", color:"#4682b4"}, 500);
+		$(this).stop().animate({backgroundColor: "#ffffff", color:"#2d82cb"}, 300); //マウスオーバー時
 	},function() {
-		$(this).stop(false, true).animate({ backgroundColor: "#4682b4", color:"#ffffff"}, 500);
+		$(this).stop().animate({ backgroundColor: "#2d82cb", color:"#ffffff"}, 500); //マウスオーバー後
 	});
 });
