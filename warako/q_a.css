@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+body{
+	font-size: 100%;
+	font-family: "MS　明朝",serif;
+}
+
+#wrapper{
+	width: 960px;
+	height: auto;
+	margin:0 auto;
+}
+
+
+#contents_q_a{
+	width: 960px;
+/*	height: 650px; */
+	text-align: center;
+	margin: 30px 0px 0px 50px;
+}
+
+#close_q_a{
+	width: 960px;
+	height: 100px;
+}
+
+
+#close_q_a p{
+	color: #2d82cb;
+	width: 283px;
+	height: 72px;
+	display: block;
+	line-height: 72px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	border: 1px solid #2d82cb;
+}
+
+#close_q_a a{
+	width: 283px;
+	height: 72px;
+	display: block;
+	line-height: 72px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #2d82cb;
+}
+
+#close_q_a a:hover{
+	text-decoration: underline;
+	background-color: #fff;
+	color: #2d82cb;
+}
+}
+
+dl{
+  display:table;
+  width:910px;
+/*   margin-left:50px; */
+}
+
+dt{
+	width:100px;
+	height:130px;
+	display:table-cell;
+	vertical-align:middle; 
+	margin-top:0px;
+	margin-left:50px;
+	margin-bottom:30px; 
+}
+
+
+
+
+dd{
+	width:810px;
+	height:120px;
+	display:table-cell;
+	text-align:left;
+   vertical-align:middle;
+	margin-top:0px;
+	margin-bottom:30px;
+	padding-left:20px;
+/*	padding-top:10px;
+	padding-bottom:10px; */
+	line-height:1.5em; 
+
+}
+
+dd ul{
+	padding-left:20px;
+}
+
+.red{
+	font-size:1.5em;
+	font-weight:bold;
+	padding-left:2px;
+	padding-right:5px;
+	color: red;
+}
+
+/*クリアーフィックス*/
+.clearfix:after{
+content:'';
+display:block;
+height:0px;
+clear:both;
+visibility:hidden;
+}
