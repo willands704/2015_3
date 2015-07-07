@@ -106,7 +106,7 @@ margin:0 auto;
 .header-right{
 	width:78%;
 	height:170px; 
-	margin-top:50px;
+	margin-top:40px;
 	margin-bottom:0px;
 	text-align:right;
 	float:right;
@@ -304,14 +304,17 @@ margin:0 auto;
 	height:690px;
 	margin:0 auto;
 	background-repeat:no-repeat;
+	position:relative;
 }
 
 .content1-sub-title{
-	font-size:50px;
+	font-size:60px;
 	color:#ffffff;
 	padding:60px 20px 40px 20px;
 	font-weight:bold;
-	margin-left:40px;
+	position:absolute;
+	left:50px;
+	top:50px;
 }
 
 .content1-sub-text{
@@ -319,12 +322,12 @@ margin:0 auto;
 	font-size:20px;
 	width:450px;
 	opacity:0.7;
-	margin-top:10px;
-	margin-left:25px;
-	margin-bottom:10px;
 	padding:40px 20px 40px 20px;
 	line-height:2em;
 	font-weight:bold;
+	position:absolute;
+	bottom:50px;
+	left:50px;
 }
 
 .content1-sub-text ul li{
@@ -521,6 +524,83 @@ margin:0 auto;
 	color: #fff;
 	font-size: 70px;
 	font-weight: bold;
+}
+
+/*講師紹介*/
+
+
+.content7{
+	margin:10px auto;
+	width:960px;
+	height:100%;
+}
+
+.profile>p{
+	font-size:60px;
+	font-weight: bold;
+	text-align:center;
+	margin:10px;
+}
+
+.teachers_head{
+	width:960px;
+	height:auto;
+	position:relative;
+}
+
+.teachers_head p{
+	width: 300px;
+	position:absolute;
+	top:30%;
+	left:35%;
+	color:#fff;
+	font-size:72px;
+	font-weight: bold;
+}
+
+.profile{
+	width:960px;
+}
+
+.proimage{
+	margin:0 auto;
+	width:300px;
+	
+}
+
+.probtn{
+	width:478px;
+	height:50px;
+	border:1px solid rgb(68, 125, 200);
+	text-align:center;
+	line-height:50px;
+	float:left;
+}
+
+.probtn1{
+	background-color:rgb(68, 125, 200);
+	color:#fff;
+}
+
+.probtn2{
+	color:rgb(68, 125, 200);
+}
+
+.probox{
+	width:958px;
+	height:500px;
+	border:1px solid rgb(68, 125, 200);
+	border-top:none;
+	font-size:1.5em;	
+	overflow-y: scroll;
+}
+
+.protext{
+	padding:10px;
+}
+
+.protext2 dt{
+	font-size:2em;
 }
 
 /*お問い合わせフォーム*/
