@@ -241,9 +241,13 @@ margin:0 auto;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	max-width: 960px;
+	width: 100%;
 }
 
 .main > .container > li {
+	max-width: 960px;
+	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
