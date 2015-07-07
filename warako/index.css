@@ -224,15 +224,6 @@ margin:0 auto;
 	box-sizing:border-box;
 }
 
-
-/*ナビホバー*/
-/*
-.nav ul li a:hover{
-	background:#ffffff;
-	color:rgb(45,130,203);
-	border:1px solid #4682b4;
-}
-*/
 /*トップ画像*/
 .main{
 	width:100%;
@@ -401,7 +392,6 @@ margin:0 auto;
 .content4{
 	margin:0 auto;
 	width:960px;
-/*	background-image:url("img/1024_768.jpg");*/
 	height:100%;
 	position: relative;
 
@@ -520,7 +510,6 @@ margin:0 auto;
 .content7{
 	margin:10px auto;
 	width:960px;
-	background:rgb(45,71,146);
 	height:300px;
 	position: relative;
 }
@@ -538,7 +527,6 @@ margin:0 auto;
 .content8{
 	margin:10px auto;
 	width:960px;
-	background:rgb(45,71,146);
 	height:300px;
 	position: relative;
 }
@@ -558,13 +546,43 @@ margin:0 auto;
 	background:rgb(45,71,146);
 	height:300px;
 }*/
+.content9 {
+	width: 960px;
+	margin: 0 auto;
+}
 
-.content9{
+.content9 > .kiyaku{
 	margin:10px auto;
 	width:960px;
 	background:#cccccc;
 	height:300px;
 }
+
+.content9 dl dt {
+	margin-bottom: 0.5em;
+}
+
+.content9 dl dd {
+	margin-bottom: 0.7em;
+}
+
+.content9 dl dt span{
+	color: red;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.content9 dl dd p.error{
+	color: red;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+.content9 dl dd.error input,
+.content9 dl dd.error textarea {
+	background:	#ffc0cb;
+}
+
 
 /*.content9 p{
 	padding:10px;
@@ -662,34 +680,6 @@ width:100%;
 .content2{
 	margin:10px auto;
 	width:100%;
-	height:300px;
-}
-
-.content3{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
-	height:300px;
-}
-
-.content4{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
-	height:300px;
-}
-
-.content5{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
-	height:300px;
-}
-
-.content6{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
 	height:300px;
 }
 
