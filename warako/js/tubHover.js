@@ -1,5 +1,8 @@
 $(function(){
 	$('.probtn1').click(function(){
+//		$(this).animate({backgroundColor: "#2d82cb", color:"#ffffff"},1000);
+//		$('.probtn2').animate({backgroundColor: "#2d82cb", color:"#ffffff"},1000);
+
 		$('.probtn1').css({backgroundColor: "#2d82cb", color:"#ffffff"});
 		$('.probtn2').css({backgroundColor: "#ffffff", color:"#2d82cb"});
 	});
