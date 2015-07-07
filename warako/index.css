@@ -1,4 +1,4 @@
-﻿@charset "UTF-8N";
+@charset "UTF-8N";
 
 /*リセットCSS*/
 html, body, div, span, object, iframe,
@@ -404,11 +404,49 @@ margin:0 auto;
 /*	background-image:url("img/1024_768.jpg");*/
 	height:100%;
 	position: relative;
+
 }
 
 .content4-inner{
 	margin:0 auto;
 	padding:0;
+	position: relative;
+}
+
+.content4-inner2{
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	line-height: 1.8;
+}
+
+.time_contents{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.time_date{
+	font-size: 20px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	
+}
+
+.orange_futoji{
+	font-size: 25px;
+	font-weight: bold;
+	color: #FD4F02;
+}
+
+.content_sentence{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.content_sentence_min{
+	font-size: 18px;
+	font-weight: bold;
+
 }
 
 /*.content4 p{
