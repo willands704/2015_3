@@ -721,8 +721,12 @@ address{
 	min-width:300px;
 }
 
+/*サブナビ非表示*/
+.subnav-wrap{
+	display:none;
+}
 
-
+/*ほっとドックメニュー非表示設定*/
 /*.nav ul{
 	display:none;
 }*/
@@ -752,17 +756,160 @@ border-top:none;
 width:100%;
 }
 
+/*ヘッダー*/
+.header-wrap{
+	width:100%;
+	margin:0px auto;
+}
+
+/*わら講ロゴ*/
+.header-left{
+	width:100%;
+	margin-top:0px;
+	height:170px;
+	text-align:center;
+	float:left;
+}
+/*	background:rgb(45,71,146);*/
+
+
+/*ビジネス（タイトルロゴjsあり）　ここから*/
+.header-right{
+	width:100%;
+	height:170px; 
+	margin-top:40px;
+	margin-bottom:0px;
+	text-align:right;
+	float:right;
+
+/*	width:80%;
+	text-align:right;
+	height:170px;
+	float:right;
+	background:rgb(45,71,146);*/
+}
+
+/*ビジネス×笑い*/
 .content1{
 	margin:10px auto;
 	width:100%;
-	height:300px;
+	height:100%;
 
 }
 
+.content1-text1{
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.content1-text2{
+	text-align:center;
+	font-size:4em;
+	padding:2px;
+	font-weight:bold;
+}
+
+.content1-text3{
+	color:#000000;
+	text-align:center;
+	font-size:1em;
+	line-height:1.2em;
+	font-weight:bold;
+}
+
+/*こんな悩み抱えてませんか*/
+.content1-sub{
+	background-image:url("img/bgmain01.jpg");
+	width:100%;
+	height:100%;
+	background-size:100% auto;
+	margin:0 auto;
+	background-repeat:no-repeat;
+	position:static;
+}
+
+.content1-sub-title{
+	font-size:2em;
+	color:#ffffff;
+	padding:5px 5px 5px 5px;
+	font-weight:bold;
+	position:static;
+}
+
+.content1-sub-text{
+	background:none;
+	color:#ffffff;
+	font-size:1em;
+	width:100%;
+	opacity:1;
+	padding:5px 5px 5px 5px;
+	line-height:1em;
+	font-weight:bold;
+	position:static;
+}
+
+.content1-sub-text ul li{
+	list-style:none;
+}
+
+
+/*そんな悩みをスパッと解決！*/
 .content2{
 	margin:10px auto;
 	width:100%;
-	height:300px;
+	height:100%;
+}
+
+.content2-text1{
+	text-align:center;
+	font-size:1.5em;
+	padding:5px;
+	color:red;
+	font-weight:bold;
+}
+
+/*About*/
+.content3{
+	margin:0 auto;
+	width:100%;
+	background-image:none;
+	height:100%;
+}
+
+.content3-title-image{
+	display:none;
+}
+
+
+.content3-top{
+	height:100%;
+	padding:1px;
+}
+
+.content3-top p{
+	font-size:1em;
+	padding:10px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+
+.content3-left{
+	float:left;
+	width:100%;
+	background:rgb(45,130,203);
+}
+
+.content3-left p{
+	margin-left:5px;
+	font-size:1.2em;
+	padding:5px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.content3-right{
+	display:none;
 }
 
 }
@@ -814,7 +961,10 @@ width:100%;
 	-ms-transform: translateY(-8px) rotate(255deg);
 	transform: translateY(-8px) rotate(225deg);
 }
-/*ここまで*/
+
+
+
+/*スマホここまで*/
 
 /*クリアーフィックス*/
 .clearfix:after{
