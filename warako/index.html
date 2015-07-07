@@ -19,14 +19,13 @@
 		<script src="./js/menuHover.js"></script> <!-- メニューのホバー処理 -->
 		<script src="./js/smooth.js"></script> <!-- 移動 -->
 		<script src="./js/ue.js"></script> <!-- 移動 -->
-		<script src="./js/logoanimation.js"></script> <!-- ロゴアニメーション -->
+		<script src="./js/logoanimation.js"></script> <!-- ロゴアメーション -->
+
 		<script src="./js/slide.js"></script> <!-- スライドショー -->
-		<script src="./js/mailform.js"></script> <!-- メールフォーム -->
-
-
+		<script src="./js/mailform.js"></script> <!-- メールフォー-->
 	</head>
+
 	<body>
-		<!--test-->
 		<div class="wrap">
 		
 			<div class="subnav-wrap clearfix">
@@ -37,7 +36,7 @@
 			
 				<div class="subnav">
 					<ul class="clearfix">
-						<li><a href="access.html" target="_blank">よくあるご質問</a></li>
+						<li><a href="access.html" target="_blank">アクセス</a></li>
 						<li><a href="access.html" target="_blank">アクセス</a></li>
 					</ul>
 				</div>
@@ -86,12 +85,11 @@
 			
 			<div class="main">
 				<!--<img class="image-top" src="img/960_300_1.jpg">-->
-				<ul class="container">
-					<li><img src="img/slide-01.jpg"></li>
-					<li><img src="img/slide-02.jpg"></li>
-					<li><img src="img/slide-03.jpg"></li>
-					<li><img src="img/slide-04.jpg"></li>
-					<li><img src="img/slide-05.jpg"></li>
+				<ul id="bxslider">
+					<li><img class="bx-image" src="image/slide1.jpg"></li>
+					<li><img class="bx-image" src="image/slide2.jpg"></li>
+					<li><img class="bx-image" src="image/slide3.jpg"></li>
+					<li><img class="bx-image" src="image/slide4.jpg"></li>
 				</ul>
 			</div>
 			
@@ -160,33 +158,35 @@
 			<div class="content4">
 
 					<img src = "img/curriculum.png" alt = "">
-					<p span id = "curriculum">講座内容一例</p>
+					<p><span id = "curriculum">講座内容一例</span></p>
 
 				<div class="content4-inner">
-					<img src="img/kougi.jpg">
-					<!--<p>時間　内容</p>
-					<p>0：00～　講師自己紹介（お笑いとともに歩んだキャリア）</p>
-					<p>0：20～　アイスブレイク（売れている芸人のデビューの話など）</p>
-					<p>0：40～　お笑いにおける唯一無二の公式とは？</p>
-					<p>0：40～　異性間のコミニュケーション力アップ！</p>
-					<p>1：10～　漫才・コント体験（漫才やコントをやってみよう！）</p>
-					<p>1：10～　人前で話すことへの慣れ、笑いの間など、講師が指導いたします！</p>
-					<p>1：40～　（なるべく）すべらない話</p>
-					<p>1：40～　皆様にお好きな話をして頂き、改善するべき点などを指導いたします</p>
-					<p>1：40～　自分エピソード、1分間スピーチ、朝礼の訓示、様々な場面での挨拶等…</p>
-					<p>2：00～　お疲れ様でした！</p>
-					<p>その他1時間のカリキュラム・1時間30分のカリキュラム等もございます。<br>
-					また、各業種、企業内のセレクションごとへの対応など、ご相談により変更を承ります。</p>-->
+					<img src = "img/kouza.png" alt = "">   
+
+					<div class = "content4-inner2">
+					<p class ="time_contents">時間&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内容</p>
+					<p><span class = "time_date">0：00～</span><span class = "orange_futoji">&nbsp;&nbsp;&nbsp;講師自己紹介</span><span class = "content_sentence">（お笑いとともに歩んだキャリア）</span></p>
+					<p><span class = "time_date">0：20～</span><span class = "orange_futoji">&nbsp;&nbsp;&nbsp;アイスブレイク</span><span class = "content_sentence">（売れている芸人のデビューの話等）</span></p>
+					<p><span class = "time_date">0：40～</span><span class = "content_sentence">&nbsp;&nbsp;&nbsp;&nbsp;お笑いにおける</span><span class = "orange_futoji">唯一無二の公式</span><span class = "content_sentence">とは？</span></p>
+					<p><span class = "orange_futoji">&nbsp;&nbsp;異性間のコミニュケーション力</span><span class = "content_sentence">アップ！</span></p>
+					<p><span class = "orange_futoji">&nbsp;&nbsp;初対面</span><span class = "content_sentence">の人達とのコミュニケーション力アップなど！</span></p>
+					<p><span class = "time_date">1：10～</span><span class = "orange_futoji">&nbsp;&nbsp;&nbsp;漫才・コント</span><span class = "content_sentence">体験（漫才やコントをやってみよう！）</span></p>
+					<p><span class = "content_sentence">&nbsp;&nbsp;&nbsp;人前で話すことへの慣れ、笑いの間など、講師が指導いたします！</span></p>
+					<p><span class = "time_date">1：40～</span><span class = "content_sentence">&nbsp;&nbsp;&nbsp;&nbsp;（なるべく）</span><span class = "orange_futoji">すべらない</span><span class = "content_sentence">話</span></p>
+					<p><span class = "content_sentence">&nbsp;&nbsp;&nbsp;皆様にお好きな話をして頂き、</span><span class = "orange_futoji">改善するべき点などを指導</span><span class = "content_sentence">いたします</span></p>
+					<p><span class = "content_sentence">&nbsp;&nbsp;&nbsp;自分エピソード、1分間スピーチ、朝礼の訓示、様々な場面での挨拶等…</span></p>
+					<p><span class = "time_date">2：00～</span><span class = "content_sentence">&nbsp;&nbsp;&nbsp;&nbsp;お疲れ様でした！</span></p>
+					<p>&nbsp;</p>					
+					<p><span class = "content_sentence_min">&nbsp;&nbsp;&nbsp;その他1時間のカリキュラム・1時間30分のカリキュラム等もございます。<br>
+					&nbsp;&nbsp;&nbsp;また、各業種、企業内のセレクションごとへの対応など、ご相談により変更を承ります。</span></p>
+					</div>
 				</div>
 			</div>
-			
 
 			<div class="content5">
 				<img src = "img/review.png" alt = "">
 				<p><span id = "review">受講者の声</span></p>
 				<img src = "img/coment.png" alt = "">
-			
-				
 			</div>
 			
 			<div class="content7">
