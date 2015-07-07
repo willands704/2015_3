@@ -1,4 +1,4 @@
-﻿@charset "UTF-8N";
+@charset "UTF-8N";
 
 /*リセットCSS*/
 html, body, div, span, object, iframe,
@@ -472,7 +472,6 @@ margin:0 auto;
 .content7{
 	margin:10px auto;
 	width:960px;
-	background:rgb(45,71,146);
 	height:300px;
 	position: relative;
 }
@@ -490,7 +489,6 @@ margin:0 auto;
 .content8{
 	margin:10px auto;
 	width:960px;
-	background:rgb(45,71,146);
 	height:300px;
 	position: relative;
 }
