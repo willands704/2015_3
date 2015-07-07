@@ -1,4 +1,4 @@
-@charset "UTF-8N";
+﻿@charset "UTF-8N";
 
 /*リセットCSS*/
 html, body, div, span, object, iframe,
@@ -88,7 +88,7 @@ margin:0 auto;
 /*ヘッダー*/
 .header-wrap{
 	width:960px;
-	margin:20px auto;
+	margin:0px auto;
 }
 
 /*わら講ロゴ*/
@@ -106,7 +106,7 @@ margin:0 auto;
 .header-right{
 	width:78%;
 	height:170px; 
-	margin-top:0px;
+	margin-top:50px;
 	margin-bottom:0px;
 	text-align:right;
 	float:right;
@@ -237,16 +237,31 @@ margin:0 auto;
 .main{
 	width:100%;
 	margin:0 auto;
+	max-width: 960px;
+
 }
 
-.image-top{
-	width:100%;
-	height:auto;
+.main img {
+	max-width: 100%;
 }
 
-.bx-image{
-	width:100%;
-	height:auto;
+.main > .container {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main > .container > li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main > .container > li:first-child {
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 /*コンテンツ*/
@@ -384,28 +399,25 @@ margin:0 auto;
 
 /*講義内容*/
 .content4{
-	margin:10px auto;
+	margin:0 auto;
 	width:960px;
-	background-image:url("img/1024_768.jpg");
+/*	background-image:url("img/1024_768.jpg");*/
 	height:100%;
 	position: relative;
 }
 
 .content4-inner{
-	background:#ffffff;
-	width:90%;
-	height:80%;
 	margin:0 auto;
-	opacity:0.7;
+	padding:0;
 }
 
-.content4 p{
+/*.content4 p{
 	margin:0 auto;
 	width:90%;
 	height:90%;
 	padding:10px;
 	font-weight:bold;
-}
+}*/
 
 #curriculum{
 	position: absolute;
@@ -708,3 +720,5 @@ visibility:hidden;
 	bottom: 50px;
 	right: 50px;
 }
+
+
