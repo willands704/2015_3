@@ -523,13 +523,43 @@ margin:0 auto;
 	background:rgb(45,71,146);
 	height:300px;
 }*/
+.content9 {
+	width: 960px;
+	margin: 0 auto;
+}
 
-.content9{
+.content9 > .kiyaku{
 	margin:10px auto;
 	width:960px;
 	background:#cccccc;
 	height:300px;
 }
+
+.content9 dl dt {
+	margin-bottom: 0.5em;
+}
+
+.content9 dl dd {
+	margin-bottom: 0.7em;
+}
+
+.content9 dl dt span{
+	color: red;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.content9 dl dd p.error{
+	color: red;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+.content9 dl dd.error input,
+.content9 dl dd.error textarea {
+	background:	#ffc0cb;
+}
+
 
 /*.content9 p{
 	padding:10px;
