@@ -9,6 +9,8 @@
 
 		<title>猪虎太郎</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>		
+		
 		<script src="./js/jquery.bxslider.min.js"></script>
 		<script src="./index.js"></script>
 		<script type="text/javascript">
@@ -24,6 +26,8 @@
 		<script src="./js/jquery.color.js"></script> <!-- メニューのホバー処理 -->
 		<script src="./js/menuHover.js"></script> <!-- メニューのホバー処理 -->
 		<script src="./js/smooth.js"></script> <!-- 移動 -->
+		<script src="./js/ue.js"></script> <!-- 移動 -->
+		<script src="./js/logoanimation.js"></script> <!-- ロゴアニメーション -->
 	</head>
 	<body>
 		<div class="wrap">
@@ -47,7 +51,28 @@
 			
 				<h1 class="header-left"><img src="img/warakou2.png"></h1>
 				
-				<h2 class="header-right"><img src="img/title.png"></h2>
+				<h2 class="header-right">
+					<p class="t_logo clearfix">
+						<span id="box1" class="box">ビ</span>
+						<span id="box2" class="box">ジ</span>
+						<span id="box3" class="box">ネ</span>
+						<span id="box4" class="box">ス</span>
+						<span id="box5" class="box">パ</span>
+						<span id="box6" class="box">ー</span>
+						<span id="box7" class="box">ソ</span>
+						<span id="box8" class="box">ン</span>
+						<span id="box9" class="box nobgc">の</span>
+						<span id="box10" class="box nobgc">た</span>
+						<span id="box11" class="box nobgc">め</span>
+						<span id="box12" class="box nobgc">の</span>
+						<span id="box13" class="box">お</span>
+						<span id="box14" class="box"><span id="spin" class="spin">笑</span></span>
+						<span id="box15" class="box">い</span>
+						<span id="box16" class="box nobgc">講</span>
+						<span id="box17" class="box nobgc">座</span>
+					</p>
+					<p class="sub_catch">または私は如何にしてビジネストークをやめお笑いを愛するようになったか</p>
+				</h2>
 			
 			</div>
 			
@@ -102,13 +127,13 @@
 			</div>
 			
 			<div class="content3-title-image">
-				<img src="img/about.gif">
+				<img src="img/about.jpg">
 			</div>
 			
 			<div class="content3 clearfix" id="content3">
 			
 				<div class="content3-top">
-					<p class="content3-text1"><!--ビジネス活動をしていると社内外を問わず、<br>
+					<p>ビジネス活動をしていると社内外を問わず、<br>
 					日々様々な壁にぶつかります。<br>
 					「自分と顧客の壁」、「自分とプレゼンテーションの相手との壁」<br>
 					「自分と上司の壁」、「自分と部下の壁」等々…。<br>
@@ -118,22 +143,23 @@
 					競合が多いビジネスシーンでは、<br>
 					まず、自分自身を印象付ける事が必要なケースも<br>
 					多くなります。<br>
-					そこで有効となるのが笑いなのです。--></p>
+					そこで有効となるのが笑いなのです。</p>
 				</div>
-				<div class="content3-left"><!--
-						<p class="content3-title">5つのポイント</p>
+				<div class="content3-left">
+						<p>5つのポイント</p>
 						<p>1.最初の3分で全てが決まる</p>
 						<p>2.講師、ベテランに営業力はない</p>
 						<p>3.営業力は聞き上手</p>
 						<p>4.話のトーンが説得力を決める</p>
-						<p>5.なぜお笑いの人は営業力があるのか</p>-->
+						<p>5.なぜお笑いの人は営業力があるのか</p>
 				</div>
 				<div class="content3-right">
 					<!--<p>ccc</p>-->
 				</div>
 			</div>
 			
-			<div class="content4" id="content4">
+			<div class="content4">
+				<div class="content4-inner">
 					<p>時間　内容</p>
 					<p>0：00～　講師自己紹介（お笑いとともに歩んだキャリア）</p>
 					<p>0：20～　アイスブレイク（売れている芸人のデビューの話など）</p>
@@ -145,8 +171,9 @@
 					<p>1：40～　皆様にお好きな話をして頂き、改善するべき点などを指導いたします</p>
 					<p>1：40～　自分エピソード、1分間スピーチ、朝礼の訓示、様々な場面での挨拶等…</p>
 					<p>2：00～　お疲れ様でした！</p>
-				<p>その他1時間のカリキュラム・1時間30分のカリキュラム等もございます。<br>
-				また、各業種、企業内のセレクションごとへの対応など、ご相談により変更を承ります。</p>
+					<p>その他1時間のカリキュラム・1時間30分のカリキュラム等もございます。<br>
+					また、各業種、企業内のセレクションごとへの対応など、ご相談により変更を承ります。</p>
+				</div>
 			</div>
 			
 			<div class="content5" id="content5">
@@ -196,6 +223,9 @@
 
 			</div>
 			<address>Copyright &copy; ビジネスパーソンのためのお笑い講座 All Rights Reserved.</address>
+		</div>
+		<div class="ue" id="ue">
+			<img src="img/ue.png">
 		</div>
 	</body>
 </html>
