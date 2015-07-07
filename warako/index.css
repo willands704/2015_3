@@ -604,9 +604,11 @@ address{
 	min-width:300px;
 }
 
-.nav ul{
+
+
+/*.nav ul{
 	display:none;
-}
+}*/
 
 .nav ul li a{
 width:100%;
@@ -653,7 +655,7 @@ width:100%;
 	width: 42px;
 	height:42px;
 	display: block;
-	margin:0;
+	margin:0 auto ;
 	position: absolute;
 
 }
