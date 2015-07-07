@@ -2,6 +2,8 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="keywords" content="放送作家,構成作家,お笑い,問題解決力,笑講,">
+		<meta name="description" content="ビジネス×お笑い＝問題解決力　「笑い」がビジネスに効くことをご存知ですか？人間関係と自由な発想にお困りのあなたに！笑いで築く職場環境！">
 		<link rel="stylesheet" href="index.css" type="text/css">
 		<link rel="stylesheet" type="text/css" href="jquery.bxslider.css" charset="UTF-8">
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
@@ -13,23 +15,18 @@
 		
 		<script src="./js/jquery.bxslider.min.js"></script>
 		<script src="./index.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				$('#bxslider').bxSlider({
-					auto:true,
-					speed:2000,
-					mode: 'fade',
-					captions: false
-				});
-			});
-		</script>
 		<script src="./js/jquery.color.js"></script> <!-- メニューのホバー処理 -->
 		<script src="./js/menuHover.js"></script> <!-- メニューのホバー処理 -->
 		<script src="./js/smooth.js"></script> <!-- 移動 -->
 		<script src="./js/ue.js"></script> <!-- 移動 -->
 		<script src="./js/logoanimation.js"></script> <!-- ロゴアニメーション -->
+		<script src="./js/slide.js"></script> <!-- スライドショー -->
+		<script src="./js/mailform.js"></script> <!-- メールフォーム -->
+
+
 	</head>
 	<body>
+		<!--test-->
 		<div class="wrap">
 		
 			<div class="subnav-wrap clearfix">
@@ -40,7 +37,7 @@
 			
 				<div class="subnav">
 					<ul class="clearfix">
-						<li><a href="access.html" target="_blank">アクセス</a></li>
+						<li><a href="access.html" target="_blank">よくあるご質問</a></li>
 						<li><a href="access.html" target="_blank">アクセス</a></li>
 					</ul>
 				</div>
@@ -88,11 +85,12 @@
 			
 			<div class="main">
 				<!--<img class="image-top" src="img/960_300_1.jpg">-->
-				<ul id="bxslider">
-					<li><img class="bx-image" src="image/slide1.jpg"></li>
-					<li><img class="bx-image" src="image/slide2.jpg"></li>
-					<li><img class="bx-image" src="image/slide3.jpg"></li>
-					<li><img class="bx-image" src="image/slide4.jpg"></li>
+				<ul class="container">
+					<li><img src="img/slide-01.jpg"></li>
+					<li><img src="img/slide-02.jpg"></li>
+					<li><img src="img/slide-03.jpg"></li>
+					<li><img src="img/slide-04.jpg"></li>
+					<li><img src="img/slide-05.jpg"></li>
 				</ul>
 			</div>
 			
@@ -159,8 +157,13 @@
 			</div>
 			
 			<div class="content4">
+
+					<img src = "img/curriculum.png" alt = "">
+					<p span id = "curriculum">講座内容一例</p>
+
 				<div class="content4-inner">
-					<p>時間　内容</p>
+					<img src="img/kougi.jpg">
+					<!--<p>時間　内容</p>
 					<p>0：00～　講師自己紹介（お笑いとともに歩んだキャリア）</p>
 					<p>0：20～　アイスブレイク（売れている芸人のデビューの話など）</p>
 					<p>0：40～　お笑いにおける唯一無二の公式とは？</p>
@@ -172,40 +175,61 @@
 					<p>1：40～　自分エピソード、1分間スピーチ、朝礼の訓示、様々な場面での挨拶等…</p>
 					<p>2：00～　お疲れ様でした！</p>
 					<p>その他1時間のカリキュラム・1時間30分のカリキュラム等もございます。<br>
-					また、各業種、企業内のセレクションごとへの対応など、ご相談により変更を承ります。</p>
+					また、各業種、企業内のセレクションごとへの対応など、ご相談により変更を承ります。</p>-->
 				</div>
 			</div>
 			
-			<div class="content5" id="content5">
-				<p>受講者の声</p>
-				<div class="content5-box1">
-					<p>声</p>
-				</div>
-				<div class="content5-box2">
-					<p>声</p>
-				</div>
-				<div class="content5-box3">
-					<p>声</p>
-				</div>
-				<div class="content5-box4">
-					<p>声</p>
-				</div>
+
+			<div class="content5">
+				<img src = "img/review.png" alt = "">
+				<p><span id = "review">受講者の声</span></p>
+				<img src = "img/coment.png" alt = "">
+			
 				
 			</div>
 			
 			<div class="content7">
-				<p>講師紹介</p>
+				<img src = "img/teacher.png" alt = "">
+				<p><span id = "teacher">講師紹介</span></p>
 			</div>
 			
 			<div class="content8">
-				<p>お問い合わせフォーム</p>
+				<img src = "img/mail.png" alt = "">
+				<p><span id = "mail">お問い合わせ</span></p>
 			</div>
 			
 			<div class="content9">
-				<p>個人情報の取り扱いに関しまして</p>
-				<iframe src="./kiyaku.html" name="kiyaku" width="100%" height="85%">
+				<h3>当サイトへのお問い合わせ</h3>
+				<form method="post" action="thanks.php">
+					<dl>
+						<dt>お名前 <span>※必須</span></dt>
+						<dd><input class="validate required" name="name" type="text" size="80"></dd>
+						<dt>フリガナ <span>※必須</span></dt>
+						<dd><input class="validate required" name="furi" type="text" size="80"></dd>
+						<dt>メールアドレス <span>※必須</span></dt>
+						<dd><input class="validate required mail" name="mail" type="text" size="80"></dd>
+						<dt>メールアドレス(確認) <span>※必須</span></dt>
+						<dd><input class="validate required mail_check" name="mail_check" type="text" size="80"></dd>
+						<dt>性別</dt>
+						<dd>
+							<input id="man" type="radio" name="gender" value="男性">
+							<label for="man">男性</label>
+							<input id="woman" type="radio" name="gender" value="女性">
+							<label for="woman">女性</label>
+						</dd>
+						<dt>年齢</dt>
+						<dd><input class="validate number" name="age" type="text" size="width:100px">歳</dd>
+						<dt>お問い合わせ内容 <span>※必須</span></dt>
+						<dd><textarea class="validate required" name="inquiry" cols="60" rows="10" ></textarea></dd>
+					</dl>
+					<div class="kiyaku">
+						<p>個人情報の取り扱いに関しまして</p>
+						<iframe src="./kiyaku.html" name="kiyaku" width="100%" height="85%">
 この部分はインラインフレームを使用しています。
-				</iframe> 
+						</iframe>
+					</div>
+					<p><input type="submit" value="上記「個人情報取り扱いについて」同意して送信"></p>
+				</form>
 			</div>
 			
 			<div class="footer">
