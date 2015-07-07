@@ -584,6 +584,15 @@ margin:0 auto;
 	color:rgb(68, 125, 200);
 }
 
+.probtn3{
+	background-color:rgb(68, 125, 200);
+	color:#fff;
+}
+
+.probtn4{
+	color:rgb(68, 125, 200);
+}
+
 .probox{
 	width:958px;
 	height:500px;
@@ -597,8 +606,11 @@ margin:0 auto;
 	padding:10px;
 }
 
-.protext2 dt{
+.protext dt{
 	font-size:2em;
+}
+.protext2, .protext4{
+	display:none;
 }
 
 /*お問い合わせフォーム*/
