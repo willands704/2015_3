@@ -1,6 +1,8 @@
 $(function(){
 
 	var winWidth = $('body').width();
+	var navFlag = false;
+	
 	if(winWidth > 480){
 		$('#menuBtn').hide();
 	}else{
@@ -10,6 +12,9 @@ $(function(){
 	
 	$(window).resize(function(){
 		var newWidth = $('body').width();
+		$('#menuBtn').removeClass('active');
+		navFlag = false;
+		
 		if(newWidth <= 480){
 			$('#menuBtn').show();
 			$('#globalnav').hide();	
@@ -17,9 +22,9 @@ $(function(){
 			$('#menuBtn').hide();
 			$('#globalnav').show();
 		}
+		console.log(newWidth);
 	});
 
-	var navFlag = false;
 	
 	$('#menuBtn').click(function(){
 		$('#globalnav').slideToggle();
