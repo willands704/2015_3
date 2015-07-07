@@ -22,7 +22,7 @@ $(function(){
 			$('#menuBtn').hide();
 			$('#globalnav').show().removeClass('small');
 		}
-		console.log(newWidth);
+
 	});
 
 	
