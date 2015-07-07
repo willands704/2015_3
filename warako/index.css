@@ -224,15 +224,6 @@ margin:0 auto;
 	box-sizing:border-box;
 }
 
-
-/*ナビホバー*/
-/*
-.nav ul li a:hover{
-	background:#ffffff;
-	color:rgb(45,130,203);
-	border:1px solid #4682b4;
-}
-*/
 /*トップ画像*/
 .main{
 	width:100%;
@@ -401,7 +392,6 @@ margin:0 auto;
 .content4{
 	margin:0 auto;
 	width:960px;
-/*	background-image:url("img/1024_768.jpg");*/
 	height:100%;
 	position: relative;
 }
@@ -625,34 +615,6 @@ width:100%;
 .content2{
 	margin:10px auto;
 	width:100%;
-	height:300px;
-}
-
-.content3{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
-	height:300px;
-}
-
-.content4{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
-	height:300px;
-}
-
-.content5{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
-	height:300px;
-}
-
-.content6{
-	margin:10px auto;
-	width:100%;
-	background:rgb(45,71,146);
 	height:300px;
 }
 
