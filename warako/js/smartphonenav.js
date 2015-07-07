@@ -7,7 +7,7 @@ $(function(){
 		$('#menuBtn').hide();
 	}else{
 		$('#menuBtn').show();
-		$('#globalnav').hide();		
+		$('#globalnav').hide().addClass('small');		
 	}
 	
 	$(window).resize(function(){
@@ -17,10 +17,10 @@ $(function(){
 		
 		if(newWidth <= 480){
 			$('#menuBtn').show();
-			$('#globalnav').hide();	
+			$('#globalnav').hide().addClass('small');	
 		}else{
 			$('#menuBtn').hide();
-			$('#globalnav').show();
+			$('#globalnav').show().removeClass('small');
 		}
 		console.log(newWidth);
 	});

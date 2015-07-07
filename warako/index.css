@@ -795,30 +795,6 @@ address{
 	display:none;
 }*/
 
-.nav ul li a{
-width:100%;
-line-height:30px;
-}
-
-.nav ul li:first-child a{
-border-top:1px solid #ffffff;
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul li:nth-child(2) a{
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul li:nth-child(3) a{
-border-right:none;
-}
-
-.nav ul li:last-child a{
-border-top:none;
-width:100%;
-}
 
 .content1{
 	margin:10px auto;
@@ -834,6 +810,32 @@ width:100%;
 }
 
 }
+
+.nav ul.small li a{
+width:100%;
+line-height:30px;
+}
+
+.nav ul.small li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul.small li:last-child a{
+border-top:none;
+width:100%;
+}
+
 
 /*スマホ用メニューボタン*/
 .menuBtn{
