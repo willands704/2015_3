@@ -193,6 +193,7 @@ margin:0 auto;
 
 .nav{
 	margin-bottom:10px;
+	background-color: #fff;
 }
 
 .nav ul{
@@ -224,12 +225,43 @@ margin:0 auto;
 	box-sizing:border-box;
 }
 
+.navfixed{
+	position:fixed;
+	width:100%;
+	z-index: 100;
+}
+
+.nav ul.small li a{
+width:100%;
+line-height:30px;
+}
+/* スマホサイズ時のナビ（jsでクラス付け替えするので、メディアクエリに入れないで下さい） */
+.nav ul.small li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul.small li:last-child a{
+border-top:none;
+width:100%;
+}
+
+
 /*トップ画像*/
 .main{
 	width:100%;
 	margin:0 auto;
 	max-width: 960px;
-
 }
 
 .main img {
@@ -473,40 +505,115 @@ margin:0 auto;
 	font-weight: bold;
 }
 
-/*
-.content5-box1{
-	margin-bottom:10px;
-	margin-right:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+/* ここから受講者の声 */
+#contents_review{
+	width: 960px;
+	height: 858px;
+	margin:0 auto;
+	text-align: center;
+	background-image:url("img/back2.jpg");
 }
 
-.content5-box2{
-	margin-bottom:10px;
-	margin-left:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+
+.boxa{
+	width:890px;
+	margin:0 20px 0 50px;
 }
 
-.content5-box3{
-	margin-bottom:10px;
-	margin-right:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+
+.boxa_1{
+	float:left;
+	width:38%;
+	height:300px;
+	padding-left:60px;
+	margin-top:100px;
+	margin-left:40px;
 }
 
-.content5-box4{
-	margin-bottom:10px;
-	margin-left:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+h3{
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:left;
+	padding-left:40px; 
+	letter-spacing: 5px;
 }
-*/
 
+
+
+.hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:30px;
+	margin-bottom:5px;
+	
+}
+
+.boxa_2 .hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:10px;
+	margin-bottom:5px;
+	
+}
+
+
+
+.r_coment{
+	width:320px;
+	margin:0 55px;
+	font-size:1em;
+	text-align:left;
+	line-height:2em;
+	letter-spacing: 3px;
+}
+
+
+.boxa_2{
+	float:right;
+	width:35%;
+	height:300px;
+	text-align:left;
+	margin-top:65px;
+	margin-right:80px;
+}
+
+.boxb{
+	width:890px;
+	margin:0 30px 0 0px;
+}
+
+ .boxb_1{
+	float:left;
+	width:40%;
+	height:300px;
+	text-align:left;
+	margin-top:10px;
+	margin-left:30px;
+	margin-right:50px;
+}
+
+.boxb_1 .hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:10px;
+	margin-bottom:5px;
+	
+}
+
+.boxb_2{
+	float:right;
+	width:49%;
+	height:300px;
+	margin-top:35px;
+	margin-right:10px;
+}
+
+.boxb_2 .hoshi{
+	text-align:right;
+	padding-right:60px;
+	margin-top:5px;
+	margin-right:40px;
+}
 
 /*講師紹介*/
 
@@ -520,23 +627,19 @@ margin:0 auto;
 
 .teachers_head{
 	width:960px;
-	height:345px;
+	height:100%;
 	position:relative;
 }
 
 #teacher{
 	position: relative;
-	top: -50px;
+	top: -10px;
 	left: 10px;
 	color: #fff;
 	font-size: 70px;
 	font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 888ee5826c957848ddaf5339e568f94a717e2eaa
 .profile>p{
 	font-size:60px;
 	font-weight: bold;
@@ -691,14 +794,14 @@ margin:0 auto;
 .footer1{
 	width: 480px;
 	
-	 line-height: 1.6;
-	 font-weight: bold;
-	 color: #fff;
-	 font-size: 18px;
-	 letter-spacing: 2px;
-	 position: absolute;
-	 top: 150px;
-	 left: 10px;
+	line-height: 1.6;
+	font-weight: bold;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 150px;
+	left: 10px;
 }
 
 .footer2{
@@ -733,6 +836,22 @@ address{
 	min-height:100%;/*高さの最小値を決めることで高さを確保させます。デバイスサイズに応じて数値を変更させると、背景画像もレスポンシブに変化します*/
 	min-width:300px;
 }
+
+/*ヘッダー*/
+.header-wrap{
+	width:100%;
+	margin:0px auto;
+}
+
+/*わら講ロゴ*/
+.header-left{
+	width:100%;
+	margin-top:0px;
+	height:170px;
+	text-align:center;
+	float:left;
+}
+/*	background:rgb(45,71,146);*/
 	
 .content4{
 	margin:0 auto;
@@ -796,17 +915,10 @@ address{
 
 }
 
-
-
-
-
-
-
-
-/*.nav ul{
+/*サブナビ非表示*/
+.subnav-wrap{
 	display:none;
-}*/
-
+}
 
 .content1{
 	margin:10px auto;
@@ -821,33 +933,151 @@ address{
 	height:300px;
 }
 
+
+/*ビジネス（タイトルロゴjsあり）　ここから*/
+.header-right{
+	width:100%;
+	height:170px; 
+	margin-top:40px;
+	margin-bottom:0px;
+	text-align:right;
+	float:right;
+
+/*	width:80%;
+	text-align:right;
+	height:170px;
+	float:right;
+	background:rgb(45,71,146);*/
 }
 
-.nav ul.small li a{
-width:100%;
-line-height:30px;
+/*ビジネス×笑い*/
+.content1{
+	margin:10px auto;
+	width:100%;
+	height:100%;
+
 }
 
-.nav ul.small li:first-child a{
-border-top:1px solid #ffffff;
-border-right:none;
-border-bottom:none;
+.content1-text1{
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
 }
 
-.nav ul.small li:nth-child(2) a{
-border-right:none;
-border-bottom:none;
+.content1-text2{
+	text-align:center;
+	font-size:4em;
+	padding:2px;
+	font-weight:bold;
 }
 
-.nav ul.small li:nth-child(3) a{
-border-right:none;
+.content1-text3{
+	color:#000000;
+	text-align:center;
+	font-size:1em;
+	line-height:1.2em;
+	font-weight:bold;
 }
 
-.nav ul.small li:last-child a{
-border-top:none;
-width:100%;
+/*こんな悩み抱えてませんか*/
+.content1-sub{
+	background-image:url("img/bgmain01.jpg");
+	width:100%;
+	height:100%;
+	background-size:100% auto;
+	margin:0 auto;
+	background-repeat:no-repeat;
+	position:static;
 }
 
+.content1-sub-title{
+	font-size:2em;
+	color:#ffffff;
+	padding:5px 5px 5px 5px;
+	font-weight:bold;
+	position:static;
+}
+
+.content1-sub-text{
+	background:none;
+	color:#ffffff;
+	font-size:1em;
+	width:100%;
+	opacity:1;
+	padding:5px 5px 5px 5px;
+	line-height:1em;
+	font-weight:bold;
+	position:static;
+}
+
+.content1-sub-text ul li{
+	list-style:none;
+}
+
+
+/*そんな悩みをスパッと解決！*/
+.content2{
+	margin:10px auto;
+	width:100%;
+	height:100%;
+}
+
+.content2-text1{
+	text-align:center;
+	font-size:1.5em;
+	padding:5px;
+	color:red;
+	font-weight:bold;
+}
+
+/*About*/
+.content3{
+	margin:0 auto;
+	width:100%;
+	background-image:none;
+	height:100%;
+}
+
+.content3-title-image{
+	display:none;
+}
+
+
+.content3-top{
+	height:100%;
+	padding:1px;
+}
+
+.content3-top p{
+	font-size:1em;
+	padding:10px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+
+.content3-left{
+	float:left;
+	width:100%;
+	background:rgb(45,130,203);
+}
+
+.content3-left p{
+	margin-left:5px;
+	font-size:1.2em;
+	padding:5px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.content3-right{
+	display:none;
+}
+
+
+
+}
+
+/*スマホここまで*/
 
 /*スマホ用メニューボタン*/
 .menuBtn{
@@ -896,118 +1126,6 @@ width:100%;
 	-ms-transform: translateY(-8px) rotate(255deg);
 	transform: translateY(-8px) rotate(225deg);
 }
-/*ここまで*/
-
-/* ここから受講者の声 */
-#contents_review{
-	width: 960px;
-	height: 858px; 
-	text-align: center;
-	background-image:url("img/back2.jpg");
-}
-
-
-.boxa{
-	width:890px;
-	margin:0 20px 0 50px;
-}
-
-
-.boxa_1{
-	float:left;
-	width:38%;
-	height:300px;
-	padding-left:60px;
-	margin-top:100px;
-	margin-left:40px;
-}
-
-h3{
-	font-size:1.5em;
-	font-weight:bold;
-	text-align:left;
-	padding-left:40px; 
-	letter-spacing: 5px;
-}
-
-
-
-.hoshi{
-	text-align:right;
-	margin-top:5px;
-	margin-right:30px;
-	margin-bottom:5px;
-	
-}
-
-.boxa_2 .hoshi{
-	text-align:right;
-	margin-top:5px;
-	margin-right:10px;
-	margin-bottom:5px;
-	
-}
-
-
-
-.r_coment{
-	width:320px;
-	margin:0 55px;
-	font-size:1em;
-	text-align:left;
-	line-height:2em;
-	letter-spacing: 3px;
-}
-
-
-.boxa_2{
-	float:right;
-	width:35%;
-	height:300px;
-	text-align:left;
-	margin-top:65px;
-	margin-right:80px;
-}
-
-.boxb{
-	width:890px;
-	margin:0 30px 0 0px;
-}
-
- .boxb_1{
-	float:left;
-	width:40%;
-	height:300px;
-	text-align:left;
-	margin-top:10px;
-	margin-left:30px;
-	margin-right:50px;
-}
-
-.boxb_1 .hoshi{
-	text-align:right;
-	margin-top:5px;
-	margin-right:10px;
-	margin-bottom:5px;
-	
-}
-
-.boxb_2{
-	float:right;
-	width:49%;
-	height:300px;
-	margin-top:35px;
-	margin-right:10px;
-}
-
-.boxb_2 .hoshi{
-	text-align:right;
-	padding-right:60px;
-	margin-top:5px;
-	margin-right:40px;
-}
-
-/*ここまで 受講者の声*/
 
 /*クリアーフィックス*/
 .clearfix:after{
@@ -1023,5 +1141,3 @@ visibility:hidden;
 	bottom: 50px;
 	right: 50px;
 }
-
-
