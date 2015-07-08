@@ -193,6 +193,7 @@ margin:0 auto;
 
 .nav{
 	margin-bottom:10px;
+	background-color: #fff;
 }
 
 .nav ul{
@@ -224,12 +225,43 @@ margin:0 auto;
 	box-sizing:border-box;
 }
 
+.navfixed{
+	position:fixed;
+	width:100%;
+	z-index: 100;
+}
+
+.nav ul.small li a{
+width:100%;
+line-height:30px;
+}
+/* スマホサイズ時のナビ（jsでクラス付け替えするので、メディアクエリに入れないで下さい） */
+.nav ul.small li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul.small li:last-child a{
+border-top:none;
+width:100%;
+}
+
+
 /*トップ画像*/
 .main{
 	width:100%;
 	margin:0 auto;
 	max-width: 960px;
-
 }
 
 .main img {
@@ -396,32 +428,44 @@ margin:0 auto;
 }
 
 /*講義内容*/
+
 .content4{
 	margin:0 auto;
 	width:960px;
-	height:100%;
+}
+
+.content4-top{
+	width:960px;
+	height: 285px;
+	padding-left: 250px;
+	background-image: url("img/curriculum.png");
+	background-repeat: no-repeat;
 	position: relative;
 }
+
 #curriculum{
-	position: absolute;
-	top: 150px;
-	left: 240px;
+	display: inline-box;
 	color: #fff;
 	font-size: 70px;
 	font-weight: bold;
-}
+	position: absolute;
+	top: 160px;
+	left:250px;
 
+}
+/*授業風景画像*/
 .content4-inner{
+	width:960px;
+	height:720px;
 	margin:0 auto;
 	padding:0;
-	position: relative;
+	background-image: url("img/kouza.png");
+	background-repeat: no-repeat;
 }
 
-.content4-inner2{
-	position: absolute;
-	top: 35px;
-	left: 25px;
-	line-height: 1.8;
+.content4-inner p{
+	line-height: 2;
+	margin-left: 20px;
 }
 
 .time_contents{
@@ -471,40 +515,115 @@ margin:0 auto;
 	font-weight: bold;
 }
 
-/*
-.content5-box1{
-	margin-bottom:10px;
-	margin-right:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+/* ここから受講者の声 */
+#contents_review{
+	width: 960px;
+	height: 858px;
+	margin:0 auto;
+	text-align: center;
+	background-image:url("img/back2.jpg");
 }
 
-.content5-box2{
-	margin-bottom:10px;
-	margin-left:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+
+.boxa{
+	width:890px;
+	margin:0 20px 0 50px;
 }
 
-.content5-box3{
-	margin-bottom:10px;
-	margin-right:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+
+.boxa_1{
+	float:left;
+	width:38%;
+	height:300px;
+	padding-left:60px;
+	margin-top:100px;
+	margin-left:40px;
 }
 
-.content5-box4{
-	margin-bottom:10px;
-	margin-left:auto;
-	width:90%;
-	height:100px;
-	background:gold;
+h3{
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:left;
+	padding-left:40px; 
+	letter-spacing: 5px;
 }
-*/
 
+
+
+.hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:30px;
+	margin-bottom:5px;
+	
+}
+
+.boxa_2 .hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:10px;
+	margin-bottom:5px;
+	
+}
+
+
+
+.r_coment{
+	width:320px;
+	margin:0 55px;
+	font-size:1em;
+	text-align:left;
+	line-height:2em;
+	letter-spacing: 3px;
+}
+
+
+.boxa_2{
+	float:right;
+	width:35%;
+	height:300px;
+	text-align:left;
+	margin-top:65px;
+	margin-right:80px;
+}
+
+.boxb{
+	width:890px;
+	margin:0 30px 0 0px;
+}
+
+ .boxb_1{
+	float:left;
+	width:40%;
+	height:300px;
+	text-align:left;
+	margin-top:10px;
+	margin-left:30px;
+	margin-right:50px;
+}
+
+.boxb_1 .hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:10px;
+	margin-bottom:5px;
+	
+}
+
+.boxb_2{
+	float:right;
+	width:49%;
+	height:300px;
+	margin-top:35px;
+	margin-right:10px;
+}
+
+.boxb_2 .hoshi{
+	text-align:right;
+	padding-right:60px;
+	margin-top:5px;
+	margin-right:40px;
+}
 
 /*講師紹介*/
 
@@ -518,13 +637,13 @@ margin:0 auto;
 
 .teachers_head{
 	width:960px;
-	height:345px;
+	height:100%;
 	position:relative;
 }
 
 #teacher{
 	position: relative;
-	top: -50px;
+	top: -10px;
 	left: 10px;
 	color: #fff;
 	font-size: 70px;
@@ -625,12 +744,6 @@ margin:0 auto;
 	font-weight: bold;
 }
 
-/*.content8{
-	margin:10px auto;
-	width:960px;
-	background:rgb(45,71,146);
-	height:300px;
-}*/
 .content9 {
 	width: 960px;
 	margin: 0 auto;
@@ -669,9 +782,6 @@ margin:0 auto;
 }
 
 
-/*.content9 p{
-	padding:10px;
-}*/
 
 /*フッターエリア*/
 .footer{
@@ -686,14 +796,14 @@ margin:0 auto;
 .footer1{
 	width: 480px;
 	
-	 line-height: 1.6;
-	 font-weight: bold;
-	 color: #fff;
-	 font-size: 18px;
-	 letter-spacing: 2px;
-	 position: absolute;
-	 top: 150px;
-	 left: 10px;
+	line-height: 1.6;
+	font-weight: bold;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 150px;
+	left: 10px;
 }
 
 .footer2{
@@ -721,7 +831,7 @@ address{
 	color: #fff;
 }
 
-/*スマホ*/
+/*-----------スマホ-------------*/
 @media screen and (max-width:480px){/*480px以下*/
 
 .body{
@@ -730,80 +840,86 @@ address{
 }
 
 
-/*-----受講カリキュラム-----*/	
-
-.content4 img{
-	width:100%;
-	height:100%;
-}
-
-.content4-inner img{
-	width:100%;
-	height:100%;
-}
+/*-----受講カリキュラム-----*/
 
 .content4{
 	margin:0 auto;
 	width:100%;
-	height:100%;
+	height: 100%;
+}
+
+.content4-top{
+	width: 100%;
+	background-image: none;
 	position: relative;
 }
 
+#curriculum{
+	display: inline-box;
+	color: #000;
+	font-size: 1.5em;
+	font-weight: bold;
+	position: absolute;
+	top: 90%;
+	left:2%;
+}
 .content4-inner{
-	width:100%;
-	height:100%;
+	width: 100%;
+	background-image: none;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 .content4-inner2{
-	width: 90%;
-	height: 100%;
+	width: 100%;
 	position: absolute;
-	top: 5px;
-	left: 5px;
-	line-height: 0.9;
-}
-#curriculum{
-	position:absolute;
-	top: 17%;
-	left:35%;
-	color: #fff;
-	font-size: 100%;
-	font-weight: bold;
+	top: 20px;
+	left: 0px;
 }
 
-.content_sentence_min{
+.content4-inner2 p{
 	width: 100%;
-	font-size: 50%;
-	font-weight: normal;
-	position: relative;
-	bottom: 15px;
-	
+	line-height: 0;
 }
 
 .time_contents{
 	display: none;
 }
+
 .time_date{
-	width: 50%;
-	font-size: 50%;
-	font-weight: normal;	
-	letter-spacing: normal;
+	width: 30%
+	font-size: 1em;
+	letter-spacing: none;
+	font-weight: bold;
+	
 }
+
 .orange_futoji{
-	width: 80%;
-	font-size: 50%;
-	font-weight: normal;
+	width: 30%;
+	font-size: 1em;
+	font-weight: bold;
 	color: #FD4F02;
 }
+
 .content_sentence{
-	width: 70%;
-	font-size: 50%;
-	font-weight: normal;
+	width: 30%;
+	font-size: 1em;
+	font-weight: bold;
+}
 
+.content_sentence_min{
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
 
+}
 
 /*-----受講者カリキュラムここまで-----*/
 
+/*サブナビ非表示*/
+.subnav-wrap{
+	display:none;
+}
 
 .content1{
 	margin:10px auto;
@@ -817,6 +933,103 @@ address{
 	width:100%;
 	height:300px;
 }
+
+
+
+/*ビジネス（タイトルロゴjsあり）　ここから*/
+.header-right{
+	width:100%;
+	height:170px; 
+	margin-top:40px;
+	margin-bottom:0px;
+	text-align:right;
+	float:right;
+
+/*	width:80%;
+	text-align:right;
+	height:170px;
+	float:right;
+	background:rgb(45,71,146);*/
+}
+
+
+
+
+
+=======
+/*ビジネス×笑い*/
+
+.content1{
+	margin:10px auto;
+	width:100%;
+	height:100%;
+
+}
+
+.content1-text1{
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+.content1-text2{
+	text-align:center;
+	font-size:4em;
+	padding:2px;
+	font-weight:bold;
+}
+
+.content1-text3{
+	color:#000000;
+	text-align:center;
+	font-size:1em;
+	line-height:1.2em;
+	font-weight:bold;
+}
+
+/*こんな悩み抱えてませんか*/
+.content1-sub{
+	background-image:url("img/bgmain01.jpg");
+	width:100%;
+	height:100%;
+	background-size:100% auto;
+	margin:0 auto;
+	background-repeat:no-repeat;
+	position:static;
+}
+
+.content1-sub-title{
+	font-size:2em;
+	color:#ffffff;
+	padding:5px 5px 5px 5px;
+	font-weight:bold;
+	position:static;
+}
+
+.content1-sub-text{
+	background:none;
+	color:#ffffff;
+	font-size:1em;
+	width:100%;
+	opacity:1;
+	padding:5px 5px 5px 5px;
+	line-height:1em;
+	font-weight:bold;
+	position:static;
+}
+
+.content1-sub-text ul li{
+	list-style:none;
+}
+
+
+/*そんな悩みをスパッと解決！*/
+.content2{
+	margin:10px auto;
+	width:100%;
+	height:100%;
+}
+
 
 
 
@@ -931,6 +1144,112 @@ h3{
 
 /*ここまで 受講者の声*/
 
+.content2-text1{
+	text-align:center;
+	font-size:1.5em;
+	padding:5px;
+	color:red;
+	font-weight:bold;
+}
+
+/*About*/
+.content3{
+	margin:0 auto;
+	width:100%;
+	background-image:none;
+	height:100%;
+}
+
+.content3-title-image{
+	display:none;
+}
+
+
+.content3-top{
+	height:100%;
+	padding:1px;
+}
+
+.content3-top p{
+	font-size:1em;
+	padding:10px;
+	line-height:1.5em;
+	font-weight:bold;
+}
+
+.content3-left{
+	float:left;
+	width:100%;
+	background:rgb(45,130,203);
+}
+
+.content3-left p{
+	margin-left:5px;
+	font-size:1.2em;
+	padding:5px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.content3-right{
+	display:none;
+}
+
+
+
+}
+
+/*スマホここまで*/
+
+/*スマホ用メニューボタン*/
+.menuBtn{
+	width: 42px;
+	height:42px;
+	display: block;
+	margin:0 auto ;
+	position: relative;
+
+}
+
+.menuBtn span{
+	display: block;
+	background: #000;
+	width: 24px;
+	height: 2px;
+	position: absolute;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+.menuBtn span:first-child {
+	top: 12px;
+}
+.menuBtn span:nth-child(2) {
+	margin-top: -1px;
+	top: 50%;
+}
+.menuBtn span:last-child {
+	bottom: 12px;
+}
+
+.menuBtn.active span:first-child {
+	-webkit-transform: translateY(8px) rotate(135deg);
+	-moz-transform: translateY(8px) rotate(135deg);
+	-ms-transform: translateY(8px) rotate(135deg);
+	transform: translateY(8px) rotate(135deg);
+}
+.menuBtn.active span:nth-child(2) {
+	opacity: 0;
+}
+.menuBtn.active span:last-child {
+	-webkit-transform: translateY(-8px) rotate(225deg);
+	-moz-transform: translateY(-8px) rotate(225deg);
+	-ms-transform: translateY(-8px) rotate(255deg);
+	transform: translateY(-8px) rotate(225deg);
+}
+
+
 
 }
 /*-------スマホ対応ここまで----------*/
@@ -949,6 +1268,7 @@ visibility:hidden;
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
+
 }
 
 /*-------------------*/
@@ -1026,4 +1346,7 @@ width:100%;
 	transform: translateY(-8px) rotate(225deg);
 }
 /*ここまで*/
+
+
+}
 
