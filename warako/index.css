@@ -21,6 +21,15 @@ time, mark, audio, video {
 
 }
 
+/*クリアーフィックス*/
+.clearfix:after{
+content:".";
+display:block;
+height:0px;
+clear:both;
+visibility:hidden;
+}
+
 /*ボディー*/
 body{
 margin:0;
@@ -1405,6 +1414,7 @@ address{
 
 
 /*スマホ用メニューボタン*/
+/*
 .menuBtn{
 	width: 42px;
 	height:42px;
@@ -1451,19 +1461,12 @@ address{
 	-ms-transform: translateY(-8px) rotate(255deg);
 	transform: translateY(-8px) rotate(225deg);
 }
-
+*/
 
 /*ここまで*/
 
 
-/*クリアーフィックス*/
-.clearfix:after{
-content:".";
-display:block;
-height:0px;
-clear:both;
-visibility:hidden;
-}
+
 
 .ue {
 	position: fixed;
