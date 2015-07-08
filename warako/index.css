@@ -895,19 +895,7 @@ address{
 	display:none;
 }
 
-.content1{
-	margin:10px auto;
-	width:100%;
-	height:300px;
-
-}
-
-.content2{
-	margin:10px auto;
-	width:100%;
-	height:300px;
-}
-
+/*ナビ（スマホ）*/
 .nav ul.small li a{
 width:100%;
 line-height:30px;
@@ -949,7 +937,7 @@ width:100%;
 	background:rgb(45,71,146);*/
 }
 
-/*ビジネス×笑い*/
+/*ビジネス×笑い（スマホ）*/
 .content1{
 	margin:10px auto;
 	width:100%;
@@ -978,7 +966,7 @@ width:100%;
 	font-weight:bold;
 }
 
-/*こんな悩み抱えてませんか*/
+/*こんな悩み抱えてませんか（スマホ）*/
 .content1-sub{
 	background-image:url("img/bgmain01.jpg");
 	width:100%;
@@ -1014,7 +1002,7 @@ width:100%;
 }
 
 
-/*そんな悩みをスパッと解決！*/
+/*そんな悩みをスパッと解決！（スマホ）*/
 .content2{
 	margin:10px auto;
 	width:100%;
@@ -1029,7 +1017,7 @@ width:100%;
 	font-weight:bold;
 }
 
-/*About*/
+/*About（スマホ）*/
 .content3{
 	margin:0 auto;
 	width:100%;
@@ -1072,7 +1060,50 @@ width:100%;
 	display:none;
 }
 
+/*フッターエリア（スマホ）*/
+.footer{
+	width:100%;
+	height:auto;
+	background-image:none;
+	margin:20px auto 0px;
+	position:static;
+	
+}
 
+.footer1{
+	width:100%;
+	
+	line-height:1.6;
+	font-weight:bold;
+	color:#000000;
+	font-size:1em;
+	letter-spacing: 2px;
+	position:static;
+}
+
+.footer2{
+	display:none;
+	width:100%;
+	line-height:1em;
+	font-weight: bold;
+	color:#000000;
+	font-size:1em;
+	letter-spacing: 2px;
+	position: static;
+}	
+
+address{
+	position:static;
+	width:100%;
+}
+
+.copy{
+	position:static;
+	font-weight:bold;
+	color:#000000;
+	background:rgb(45,130,203);
+	padding:5px;
+}
 
 }
 
