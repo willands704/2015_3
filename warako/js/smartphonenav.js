@@ -1,25 +1,30 @@
 $(function(){
 
 	var winWidth = $('body').width();
+	var navFlag = false;
+	
 	if(winWidth > 480){
 		$('#menuBtn').hide();
 	}else{
 		$('#menuBtn').show();
-		$('#globalnav').hide();		
+		$('#globalnav').hide().addClass('small');		
 	}
 	
 	$(window).resize(function(){
 		var newWidth = $('body').width();
+		$('#menuBtn').removeClass('active');
+		navFlag = false;
+		
 		if(newWidth <= 480){
 			$('#menuBtn').show();
-			$('#globalnav').hide();	
+			$('#globalnav').hide().addClass('small');	
 		}else{
 			$('#menuBtn').hide();
-			$('#globalnav').show();
+			$('#globalnav').show().removeClass('small');
 		}
+
 	});
 
-	var navFlag = false;
 	
 	$('#menuBtn').click(function(){
 		$('#globalnav').slideToggle();

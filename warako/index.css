@@ -445,14 +445,6 @@ margin:0 auto;
 
 }
 
-/*.content4 p{
-	margin:0 auto;
-	width:90%;
-	height:90%;
-	padding:10px;
-	font-weight:bold;
-}*/
-
 #curriculum{
 	position: absolute;
 	top: 155px;
@@ -540,10 +532,6 @@ margin:0 auto;
 	font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 888ee5826c957848ddaf5339e568f94a717e2eaa
 .profile>p{
 	font-size:60px;
 	font-weight: bold;
@@ -591,6 +579,15 @@ margin:0 auto;
 	color:rgb(68, 125, 200);
 }
 
+.probtn3{
+	background-color:rgb(68, 125, 200);
+	color:#fff;
+}
+
+.probtn4{
+	color:rgb(68, 125, 200);
+}
+
 .probox{
 	width:958px;
 	height:500px;
@@ -604,8 +601,11 @@ margin:0 auto;
 	padding:10px;
 }
 
-.protext2 dt{
+.protext dt{
 	font-size:2em;
+}
+.protext2, .protext4{
+	display:none;
 }
 
 /*お問い合わせフォーム*/
@@ -678,7 +678,7 @@ margin:0 auto;
 	width:960px;
 	height:300px;
 	background-image: url(img/hultuta-1.png);
-	margin:0 auto;
+	margin:20px auto 0px;
 	position: relative;
 	
 }
@@ -692,7 +692,7 @@ margin:0 auto;
 	 font-size: 18px;
 	 letter-spacing: 2px;
 	 position: absolute;
-	 top: 170px;
+	 top: 150px;
 	 left: 10px;
 }
 
@@ -704,7 +704,7 @@ margin:0 auto;
 	font-size: 18px;
 	letter-spacing: 2px;
 	position: absolute;
-	top: 170px;
+	top: 150px;
 	left: 430px;
 }	
 
@@ -715,7 +715,7 @@ address{
 
 .copy{
 	position: absolute;
-	top: -20px;
+	top: -30px;
 	left: 235px;
 	font-weight: bold;
 	color: #fff;
@@ -728,6 +728,73 @@ address{
 	min-height:100%;/*高さの最小値を決めることで高さを確保させます。デバイスサイズに応じて数値を変更させると、背景画像もレスポンシブに変化します*/
 	min-width:300px;
 }
+	
+.content4{
+	margin:0 auto;
+	width:100%;
+	height:100%;
+	position: relative;
+}
+
+.content4 img {
+	display: none;
+}
+
+#curriculum{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #2F82C9;
+}
+
+
+/*.content4-inner{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+	padding:0;
+	position: relative;
+}*/
+
+.content4-inner2{
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	line-height: 1;
+}	
+.time_contents{
+	font-size: 13px;
+	font-weight: bold;
+}
+.time_date{
+	font-size: 15px;
+	letter-spacing: 5px;
+	font-weight: bold;	
+}
+.orange_futoji{
+	font-size: 10px;
+	font-weight: bold;
+	color: #FD4F02;
+}
+.content_sentence{
+	font-size: 10px;
+	font-weight: bold;
+}
+.content_sentence_min{
+	font-size: 10px;
+	font-weight: bold;
+
+}
+
+
+
+
+
 
 /*サブナビ非表示*/
 .subnav-wrap{
@@ -739,31 +806,46 @@ address{
 	display:none;
 }*/
 
-.nav ul li a{
+
+.content1{
+	margin:10px auto;
+	width:100%;
+	height:300px;
+
+}
+
+.content2{
+	margin:10px auto;
+	width:100%;
+	height:300px;
+}
+
+.nav ul.small li a{
 width:100%;
 line-height:30px;
 }
 
-.nav ul li:first-child a{
+.nav ul.small li:first-child a{
 border-top:1px solid #ffffff;
 border-right:none;
 border-bottom:none;
 }
 
-.nav ul li:nth-child(2) a{
+.nav ul.small li:nth-child(2) a{
 border-right:none;
 border-bottom:none;
 }
 
-.nav ul li:nth-child(3) a{
+.nav ul.small li:nth-child(3) a{
 border-right:none;
 }
 
-.nav ul li:last-child a{
+.nav ul.small li:last-child a{
 border-top:none;
 width:100%;
 }
 
+<<<<<<< HEAD
 /*ヘッダー*/
 .header-wrap{
 	width:100%;
@@ -920,60 +1002,6 @@ width:100%;
 	display:none;
 }
 
-}
-
-/*スマホ用メニューボタン*/
-.menuBtn{
-	width: 42px;
-	height:42px;
-	display: block;
-	margin:0 auto ;
-	position: relative;
-
-}
-
-.menuBtn span{
-	display: block;
-	background: #000;
-	width: 24px;
-	height: 2px;
-	position: absolute;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-}
-
-.menuBtn span:first-child {
-	top: 12px;
-}
-.menuBtn span:nth-child(2) {
-	margin-top: -1px;
-	top: 50%;
-}
-.menuBtn span:last-child {
-	bottom: 12px;
-}
-
-.menuBtn.active span:first-child {
-	-webkit-transform: translateY(8px) rotate(135deg);
-	-moz-transform: translateY(8px) rotate(135deg);
-	-ms-transform: translateY(8px) rotate(135deg);
-	transform: translateY(8px) rotate(135deg);
-}
-.menuBtn.active span:nth-child(2) {
-	opacity: 0;
-}
-.menuBtn.active span:last-child {
-	-webkit-transform: translateY(-8px) rotate(225deg);
-	-moz-transform: translateY(-8px) rotate(225deg);
-	-ms-transform: translateY(-8px) rotate(255deg);
-	transform: translateY(-8px) rotate(225deg);
-}
-
-
-
-/*スマホここまで*/
-
 /* ここから受講者の声 */
 #contents_review{
 	width: 960px;
@@ -1084,6 +1112,64 @@ h3{
 }
 
 /*ここまで 受講者の声*/
+
+}
+
+/*スマホここまで*/
+
+/*スマホ用メニューボタン*/
+.menuBtn{
+	width: 42px;
+	height:42px;
+	display: block;
+	margin:0 auto ;
+	position: relative;
+
+}
+
+.menuBtn span{
+	display: block;
+	background: #000;
+	width: 24px;
+	height: 2px;
+	position: absolute;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+.menuBtn span:first-child {
+	top: 12px;
+}
+.menuBtn span:nth-child(2) {
+	margin-top: -1px;
+	top: 50%;
+}
+.menuBtn span:last-child {
+	bottom: 12px;
+}
+
+.menuBtn.active span:first-child {
+	-webkit-transform: translateY(8px) rotate(135deg);
+	-moz-transform: translateY(8px) rotate(135deg);
+	-ms-transform: translateY(8px) rotate(135deg);
+	transform: translateY(8px) rotate(135deg);
+}
+.menuBtn.active span:nth-child(2) {
+	opacity: 0;
+}
+.menuBtn.active span:last-child {
+	-webkit-transform: translateY(-8px) rotate(225deg);
+	-moz-transform: translateY(-8px) rotate(225deg);
+	-ms-transform: translateY(-8px) rotate(255deg);
+	transform: translateY(-8px) rotate(225deg);
+}
+
+
+
+
+
+
 
 /*クリアーフィックス*/
 .clearfix:after{
