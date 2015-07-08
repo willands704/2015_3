@@ -715,11 +715,11 @@ h3{
 	margin:10px auto;
 	width:960px;
 	height:300px;
-	position: relative;
+	position:relative;
 }
 
 #mail{
-	position: absolute;
+	position:absolute;
 	top: 165px;
 	left: 280px;
 	color: #fff;
@@ -736,6 +736,10 @@ h3{
 .content9 {
 	width: 960px;
 	margin: 0 auto;
+}
+
+.content9-sm {
+	display:none;
 }
 
 .content9 > .kiyaku{
@@ -1117,41 +1121,49 @@ width:100%;
 }
 
 /*お問い合わせ　規約（スマホ）*/
-.content9 {
-	width:100%;
-	margin: 0 auto;
+.content9{
+	display:none;
 }
 
-.content9 > .kiyaku{
-	margin:10px auto;
+.content9-sm {
+	display:block;
+	width:100%;
+}
+
+.content9-sm dl{
+	margin-left:10px;
+}
+
+.content9-sm > .kiyaku{
+	margin:0 auto;
 	width:100%;
 	background:#cccccc;
 	height:auto;
 }
 
-.content9 dl dt {
+.content9-sm dl dt {
 	width:100%;
 	margin-bottom: 0.5em;
 }
 
-.content9 dl dd {
+.content9-sm dl dd {
 	margin-bottom: 0.7em;
 }
 
-.content9 dl dt span{
+.content9-sm dl dt span{
 	color: red;
 	font-weight: bold;
 	font-size: 0.8em;
 }
 
-.content9 dl dd p.error{
+.content9-sm dl dd p.error{
 	color: red;
 	font-weight: bold;
 	margin: 0.5em 0;
 }
 
-.content9 dl dd.error input,
-.content9 dl dd.error textarea {
+.content9-sm dl dd.error input,
+.content9-sm dl dd.error textarea {
 	background:	#ffc0cb;
 }
 
@@ -1162,6 +1174,7 @@ width:100%;
 	background-image:none;
 	background:rgb(45,130,203);
 	margin:20px auto 0px;
+	padding:5px;
 	position:static;
 	
 }
@@ -1190,6 +1203,7 @@ width:100%;
 
 address{
 	position:static;
+	background:rgb(45,130,203);
 	width:100%;
 }
 
@@ -1197,7 +1211,6 @@ address{
 	position:static;
 	font-weight:bold;
 	color:#000000;
-	background:rgb(45,130,203);
 	padding:5px;
 }
 
