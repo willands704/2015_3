@@ -401,7 +401,14 @@ margin:0 auto;
 	width:960px;
 	height:100%;
 	position: relative;
-
+}
+#curriculum{
+	position: absolute;
+	top: 150px;
+	left: 240px;
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
 }
 
 .content4-inner{
@@ -444,15 +451,6 @@ margin:0 auto;
 	font-size: 18px;
 	font-weight: bold;
 
-}
-
-#curriculum{
-	position: absolute;
-	top: 155px;
-	left: 240px;
-	color: #fff;
-	font-size: 70px;
-	font-weight: bold;
 }
 
 /*受講者の声*/
@@ -758,21 +756,32 @@ address{
 
 .content4-inner2{
 	width: 90%;
-	height: 90%;
+	height: 100%;
 	position: absolute;
-	top: 15px;
-	left: 15px;
-	line-height: 1;
+	top: 5px;
+	left: 5px;
+	line-height: 0.9;
+}
+#curriculum{
+	position:absolute;
+	top: 17%;
+	left:35%;
+	color: #fff;
+	font-size: 100%;
+	font-weight: bold;
 }
 
-#curriculum{
-	display: none;
+.content_sentence_min{
+	width: 100%;
+	font-size: 50%;
+	font-weight: normal;
+	position: relative;
+	bottom: 15px;
+	
 }
 
 .time_contents{
-	width: 80%;
-	font-size: 80%;
-	font-weight: normal;
+	display: none;
 }
 .time_date{
 	width: 50%;
@@ -791,11 +800,7 @@ address{
 	font-size: 50%;
 	font-weight: normal;
 
-.content_sentence_min{
-	width: 80%;
-	font-size: 50%;
-	font-weight: normal;
-}
+
 
 /*-----受講者カリキュラムここまで-----*/
 
