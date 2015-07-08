@@ -224,6 +224,13 @@ margin:0 auto;
 	box-sizing:border-box;
 }
 
+.navfixed{
+	position:fixed;
+	width:100%;
+	z-index: 100;
+}
+
+
 /*トップ画像*/
 .main{
 	width:100%;
@@ -1118,12 +1125,6 @@ width:100%;
 	transform: translateY(-8px) rotate(225deg);
 }
 
-
-
-
-
-
-
 /*クリアーフィックス*/
 .clearfix:after{
 content:".";
@@ -1138,5 +1139,3 @@ visibility:hidden;
 	bottom: 50px;
 	right: 50px;
 }
-
-
