@@ -475,7 +475,8 @@ margin:0 auto;
 /* ここから受講者の声 */
 #contents_review{
 	width: 960px;
-	height: 858px; 
+	height: 858px;
+	margin:0 auto;
 	text-align: center;
 	background-image:url("img/back2.jpg");
 }
@@ -593,13 +594,13 @@ h3{
 
 .teachers_head{
 	width:960px;
-	height:345px;
+	height:100%;
 	position:relative;
 }
 
 #teacher{
 	position: relative;
-	top: -50px;
+	top: -10px;
 	left: 10px;
 	color: #fff;
 	font-size: 70px;
