@@ -446,14 +446,6 @@ margin:0 auto;
 
 }
 
-/*.content4 p{
-	margin:0 auto;
-	width:90%;
-	height:90%;
-	padding:10px;
-	font-weight:bold;
-}*/
-
 #curriculum{
 	position: absolute;
 	top: 155px;
@@ -592,6 +584,15 @@ margin:0 auto;
 	color:rgb(68, 125, 200);
 }
 
+.probtn3{
+	background-color:rgb(68, 125, 200);
+	color:#fff;
+}
+
+.probtn4{
+	color:rgb(68, 125, 200);
+}
+
 .probox{
 	width:958px;
 	height:500px;
@@ -605,8 +606,11 @@ margin:0 auto;
 	padding:10px;
 }
 
-.protext2 dt{
+.protext dt{
 	font-size:2em;
+}
+.protext2, .protext4{
+	display:none;
 }
 
 /*お問い合わせフォーム*/
@@ -679,7 +683,7 @@ margin:0 auto;
 	width:960px;
 	height:300px;
 	background-image: url(img/hultuta-1.png);
-	margin:0 auto;
+	margin:20px auto 0px;
 	position: relative;
 	
 }
@@ -693,7 +697,7 @@ margin:0 auto;
 	 font-size: 18px;
 	 letter-spacing: 2px;
 	 position: absolute;
-	 top: 170px;
+	 top: 150px;
 	 left: 10px;
 }
 
@@ -705,7 +709,7 @@ margin:0 auto;
 	font-size: 18px;
 	letter-spacing: 2px;
 	position: absolute;
-	top: 170px;
+	top: 150px;
 	left: 430px;
 }	
 
@@ -716,7 +720,7 @@ address{
 
 .copy{
 	position: absolute;
-	top: -20px;
+	top: -30px;
 	left: 235px;
 	font-weight: bold;
 	color: #fff;
@@ -729,6 +733,73 @@ address{
 	min-height:100%;/*高さの最小値を決めることで高さを確保させます。デバイスサイズに応じて数値を変更させると、背景画像もレスポンシブに変化します*/
 	min-width:300px;
 }
+	
+.content4{
+	margin:0 auto;
+	width:100%;
+	height:100%;
+	position: relative;
+}
+
+.content4 img {
+	display: none;
+}
+
+#curriculum{
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #2F82C9;
+}
+
+
+/*.content4-inner{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+	padding:0;
+	position: relative;
+}*/
+
+.content4-inner2{
+	position: absolute;
+	top: 35px;
+	left: 25px;
+	line-height: 1;
+}	
+.time_contents{
+	font-size: 13px;
+	font-weight: bold;
+}
+.time_date{
+	font-size: 15px;
+	letter-spacing: 5px;
+	font-weight: bold;	
+}
+.orange_futoji{
+	font-size: 10px;
+	font-weight: bold;
+	color: #FD4F02;
+}
+.content_sentence{
+	font-size: 10px;
+	font-weight: bold;
+}
+.content_sentence_min{
+	font-size: 10px;
+	font-weight: bold;
+
+}
+
+
+
+
+
 
 
 
@@ -736,30 +807,6 @@ address{
 	display:none;
 }*/
 
-.nav ul li a{
-width:100%;
-line-height:30px;
-}
-
-.nav ul li:first-child a{
-border-top:1px solid #ffffff;
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul li:nth-child(2) a{
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul li:nth-child(3) a{
-border-right:none;
-}
-
-.nav ul li:last-child a{
-border-top:none;
-width:100%;
-}
 
 .content1{
 	margin:10px auto;
@@ -775,6 +822,32 @@ width:100%;
 }
 
 }
+
+.nav ul.small li a{
+width:100%;
+line-height:30px;
+}
+
+.nav ul.small li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul.small li:last-child a{
+border-top:none;
+width:100%;
+}
+
 
 /*スマホ用メニューボタン*/
 .menuBtn{
