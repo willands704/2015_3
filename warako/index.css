@@ -913,12 +913,13 @@ h3{
 	height:300px;
 }
 
-=======
+
 /*サブナビ非表示*/
+/* koushifixed
 .subnav-wrap{
 	display:none;
 }
->>>>>>> b3ee276c252bf57b9b98e46806edb7ce57849ee7
+*/
 
 /*ナビ（スマホ）*/
 .nav ul.small li a{
@@ -945,8 +946,7 @@ border-top:none;
 width:100%;
 }
 
-<<<<<<< HEAD
-=======
+
 /*ビジネス（タイトルロゴjsあり）　ここから*/
 .header-right{
 	width:100%;
@@ -1033,7 +1033,6 @@ width:100%;
 	margin:10px auto;
 	width:100%;
 	height:100%;
->>>>>>> b3ee276c252bf57b9b98e46806edb7ce57849ee7
 }
 
 .content2-text1{
@@ -1044,8 +1043,7 @@ width:100%;
 	font-weight:bold;
 }
 
-<<<<<<< HEAD
-=======
+
 /*About（スマホ）*/
 .content3{
 	margin:0 auto;
@@ -1090,7 +1088,7 @@ width:100%;
 }
 
 /*講師紹介スマホ*/
->>>>>>> b3ee276c252bf57b9b98e46806edb7ce57849ee7
+
 
 #teacher{
 	position: static;
@@ -1375,7 +1373,7 @@ address{
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
->>>>>>> b3ee276c252bf57b9b98e46806edb7ce57849ee7
+
 }
 
 .menuBtn span:first-child {
