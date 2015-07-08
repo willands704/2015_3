@@ -231,6 +231,31 @@ margin:0 auto;
 	z-index: 100;
 }
 
+.nav ul.small li a{
+width:100%;
+line-height:30px;
+}
+/* スマホサイズ時のナビ（jsでクラス付け替えするので、メディアクエリに入れないで下さい） */
+.nav ul.small li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul.small li:last-child a{
+border-top:none;
+width:100%;
+}
+
 
 /*トップ画像*/
 .main{
@@ -766,43 +791,42 @@ h3{
 	
 }
 
-.footer1{
-	width: 480px;
-	
-	line-height: 1.6;
-	font-weight: bold;
-	color: #fff;
-	font-size: 18px;
-	letter-spacing: 2px;
-	position: absolute;
-	top: 150px;
-	left: 10px;
-}
+	.footer1{
+		width: 480px;
+		line-height: 1.6;
+		font-weight: bold;
+		color: #fff;
+		font-size: 18px;
+		letter-spacing: 2px;
+		position: absolute;
+		top: 150px;
+		left: 10px;
+	}
 
-.footer2{
-	width: 480px;
-	line-height: 2;
-	font-weight: bold;
-	color: #fff;
-	font-size: 18px;
-	letter-spacing: 2px;
-	position: absolute;
-	top: 150px;
-	left: 430px;
-}	
+	.footer2{
+		width: 480px;
+		line-height: 2;
+		font-weight: bold;
+		color: #fff;
+		font-size: 18px;
+		letter-spacing: 2px;
+		position: absolute;
+		top: 150px;
+		left: 430px;
+	}	
 
-address{
-	position: relative;
-	width: 960px;
-}
+	address{
+		position: relative;
+		width: 960px;
+	}
 
-.copy{
-	position: absolute;
-	top: -30px;
-	left: 235px;
-	font-weight: bold;
-	color: #fff;
-}
+	.copy{
+		position: absolute;
+		top: -30px;
+		left: 235px;
+		font-weight: bold;
+		color: #fff;
+	}
 
 /*スマホ*/
 @media screen and (max-width:480px){/*480px以下*/
@@ -987,7 +1011,7 @@ width:100%;
 
 .content1-sub-text{
 	background:none;
-	color:#ffffff;
+	color:#f5f5f5;
 	font-size:1em;
 	width:100%;
 	opacity:1;
@@ -1060,11 +1084,51 @@ width:100%;
 	display:none;
 }
 
+/*お問い合わせ　規約（スマホ）*/
+.content9 {
+	width:100%;
+	margin: 0 auto;
+}
+
+.content9 > .kiyaku{
+	margin:10px auto;
+	width:100%;
+	background:#cccccc;
+	height:auto;
+}
+
+.content9 dl dt {
+	width:100%;
+	margin-bottom: 0.5em;
+}
+
+.content9 dl dd {
+	margin-bottom: 0.7em;
+}
+
+.content9 dl dt span{
+	color: red;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.content9 dl dd p.error{
+	color: red;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+.content9 dl dd.error input,
+.content9 dl dd.error textarea {
+	background:	#ffc0cb;
+}
+
 /*フッターエリア（スマホ）*/
 .footer{
 	width:100%;
 	height:auto;
 	background-image:none;
+	background:rgb(45,130,203);
 	margin:20px auto 0px;
 	position:static;
 	
