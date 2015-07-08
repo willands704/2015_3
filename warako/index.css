@@ -472,7 +472,6 @@ margin:0 auto;
 	position: relative;
 }
 
-<<<<<<< HEAD
 .review{
 	width: 100%;
 	height:540px; 
@@ -486,19 +485,12 @@ margin:0 auto;
 	height:100%;
 	text-align:center;
 	line-height:100%;
-=======
-#review{
-	position: absolute;
-	top: 410px;
-	left: 275px;
->>>>>>> b3ee276c252bf57b9b98e46806edb7ce57849ee7
 	color: #fff;
 	font-size: 70px;
 	font-weight: bold;
 	padding-top:43%;
 }
 
-<<<<<<< HEAD
 #contents_review{
 	width: 100%;
 	height: 858px; 
@@ -506,23 +498,12 @@ margin:0 auto;
 	background-image:url("img/back2.jpg");
 	background-size: 100% auto;
 	background-repeat:no-repeat;
-=======
-/* ここから受講者の声 */
-#contents_review{
-	width: 960px;
-	height: 858px;
-	margin:0 auto;
-	text-align: center;
-	background-image:url("img/back2.jpg");
->>>>>>> b3ee276c252bf57b9b98e46806edb7ce57849ee7
 }
-
 
 .boxa{
 	width:890px;
 	margin:0 20px 0 50px;
 }
-
 
 .boxa_1{
 	float:left;
@@ -539,10 +520,7 @@ h3{
 	text-align:left;
 	padding-left:40px; 
 	letter-spacing: 5px;
-<<<<<<< HEAD
 }
-
-
 
 .hoshi{
 	text-align:right;
@@ -620,88 +598,6 @@ h3{
 }
 
 /*ここまで 受講者の声*/
-=======
-}
->>>>>>> b3ee276c252bf57b9b98e46806edb7ce57849ee7
-
-
-
-.hoshi{
-	text-align:right;
-	margin-top:5px;
-	margin-right:30px;
-	margin-bottom:5px;
-	
-}
-
-.boxa_2 .hoshi{
-	text-align:right;
-	margin-top:5px;
-	margin-right:10px;
-	margin-bottom:5px;
-	
-}
-
-
-
-.r_coment{
-	width:320px;
-	margin:0 55px;
-	font-size:1em;
-	text-align:left;
-	line-height:2em;
-	letter-spacing: 3px;
-}
-
-
-.boxa_2{
-	float:right;
-	width:35%;
-	height:300px;
-	text-align:left;
-	margin-top:65px;
-	margin-right:80px;
-}
-
-.boxb{
-	width:890px;
-	margin:0 30px 0 0px;
-}
-
- .boxb_1{
-	float:left;
-	width:40%;
-	height:300px;
-	text-align:left;
-	margin-top:10px;
-	margin-left:30px;
-	margin-right:50px;
-}
-
-.boxb_1 .hoshi{
-	text-align:right;
-	margin-top:5px;
-	margin-right:10px;
-	margin-bottom:5px;
-	
-}
-
-.boxb_2{
-	float:right;
-	width:49%;
-	height:300px;
-	margin-top:35px;
-	margin-right:10px;
-}
-
-.boxb_2 .hoshi{
-	text-align:right;
-	padding-right:60px;
-	margin-top:5px;
-	margin-right:40px;
-}
-
-/*講師紹介*/
 
 .content7{
 	margin:0px auto 10px;
@@ -998,12 +894,6 @@ h3{
 
 }
 
-<<<<<<< HEAD
-
-
-
-
-
 
 /*.nav ul{
 	display:none;
@@ -1056,38 +946,6 @@ width:100%;
 }
 
 <<<<<<< HEAD
-/* ここから スマフォ対応　受講者の声 */
-.content5{
-	margin:0 auto;
-	width:100%;
-}
-
-.review{
-	height:100%; 
-}
-
-.review  p{
-	font-size:20px;
-	padding-top:38%;
-}
-
-
-#contents_review{
-	width: 90%;
-	height: auto; 
-	padding:0px;
-	margin: 0 auto;
-	text-align: left;
-	background-image:none;
-}
-
-
-
-.boxa{
-	width:100%;
-	height:100%
-	padding:0px;
-	margin:20px 0px; 
 =======
 /*ビジネス（タイトルロゴjsあり）　ここから*/
 .header-right{
@@ -1187,46 +1045,6 @@ width:100%;
 }
 
 <<<<<<< HEAD
-.boxa_1{
-	float:none;
-	width:100%;
-	height:100%;
-	padding-left:0;
-	margin:20px 0px;
-}
-
-.boxa_2{
-	float:none;
-	width:100%;
-	height:100%;
-	text-align:left;
-	padding-left:0;
-	margin:20px auto;
-}
-
-.boxa > h3{
-	width:100%;
-	margin:0 auto;
-	font-size:1.2em;
-	font-weight:bold;
-	text-align:left;
-	padding-top:20px; 
-	padding-left:30px; 
-	border-top:2px dotted #ccc;
-	letter-spacing: 2px;
-}
-
-h3{
-	width:90%;
-	margin:0 auto;
-	font-size:1.2em;
-	font-weight:bold;
-	text-align:left;
-	padding-top:20px; 
-	padding-left:30px; 
-	border-top:2px dotted #ccc;
-	letter-spacing: 2px;
-}
 =======
 /*About（スマホ）*/
 .content3{
@@ -1285,13 +1103,83 @@ h3{
 	line-height:80px;
 }
 
-<<<<<<< HEAD
+/* ここから スマフォ対応　受講者の声 */
+.content5{
+	margin:0 auto;
+	width:100%;
+}
+
+.review{
+	height:100%; 
+}
+
+.review  p{
+	font-size:20px;
+	padding-top:38%;
+}
+
+
+#contents_review{
+	width: 90%;
+	height: auto; 
+	padding:0px;
+	margin: 0 auto;
+	text-align: left;
+	background-image:none;
+}
+
+.boxa{
+	width:100%;
+	height:100%
+	padding:0px;
+	margin:20px 0px; 
+
+.boxa_1{
+	float:none;
+	width:100%;
+	height:100%;
+	padding-left:0;
+	margin:20px 0px;
+}
+
+.boxa_2{
+	float:none;
+	width:100%;
+	height:100%;
+	text-align:left;
+	padding-left:0;
+	margin:20px auto;
+}
+
+.boxa > h3{
+	width:100%;
+	margin:0 auto;
+	font-size:1.2em;
+	font-weight:bold;
+	text-align:left;
+	padding-top:20px; 
+	padding-left:30px; 
+	border-top:2px dotted #ccc;
+	letter-spacing: 2px;
+}
+
+h3{
+	width:90%;
+	margin:0 auto;
+	font-size:1.2em;
+	font-weight:bold;
+	text-align:left;
+	padding-top:20px; 
+	padding-left:30px; 
+	border-top:2px dotted #ccc;
+	letter-spacing: 2px;
+}
+
 .boxa_2 .hoshi{
 	text-align:right;
 	margin-top:5px;
 	margin-right:30px;
 	margin-bottom:5px;
-	
 }
 
 .r_coment{
@@ -1318,7 +1206,6 @@ h3{
 	margin:20px auto;
 }
 
-
 .boxb_2{
 	float:none;
 	width:100%;
@@ -1341,7 +1228,11 @@ h3{
 	margin-top:5px;
 	margin-right:30px;
 	margin-bottom:5px;
-=======
+}
+
+/* ここまで スマフォ対応　受講者の声 */
+
+
 .content7,.teachers_head,.teachers_head p,.profile{
 	width:100%;
 }
