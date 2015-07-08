@@ -451,9 +451,7 @@ width:100%;
 	position: absolute;
 	top: 160px;
 	left:250px;
-
 }
-/*授業風景画像*/
 .content4-inner{
 	width:960px;
 	height:720px;
@@ -495,6 +493,10 @@ width:100%;
 	font-size: 18px;
 	font-weight: bold;
 
+}
+/*カリキュラムレスポンシブ用*/
+.content4-responsiv	{
+	display: none;
 }
 
 /*受講者の声*/
@@ -842,42 +844,32 @@ address{
 
 /*-----受講カリキュラム-----*/
 
-.content4{
+.content4-responsiv{
+	display: block;
 	margin:0 auto;
 	width:100%;
-	height: 100%;
-}
-
-.content4-top{
-	width: 100%;
-	background-image: none;
-	position: relative;
-}
-
-#curriculum{
-	display: inline-box;
-	color: #000;
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: bold;
-	position: absolute;
-	top: 90%;
-	left:2%;
-}
-.content4-inner{
-	width: 100%;
-	background-image: none;
-	background-repeat: no-repeat;
-	position: relative;
+	line-height:2;
 }
 
-.content4-inner2{
-	width: 100%;
-	position: absolute;
-	top: 20px;
-	left: 0px;
+.content4-responsiv h2{
+	font-size: 1.3em;
 }
 
-.content4-inner2 p{
+/*------------------------*/
+
+.content4,.content4-top,.content4-inner,.content4-inner2{
+	display:none;
+}
+
+
+
+
+
+
+
+/*.content4-inner2 p{
 	width: 100%;
 	line-height: 0;
 }
@@ -912,7 +904,7 @@ address{
 	font-size: 1em;
 	font-weight: bold;
 
-}
+}*/
 
 /*-----受講者カリキュラムここまで-----*/
 
