@@ -231,31 +231,6 @@ margin:0 auto;
 	z-index: 100;
 }
 
-.nav ul.small li a{
-width:100%;
-line-height:30px;
-}
-/* スマホサイズ時のナビ（jsでクラス付け替えするので、メディアクエリに入れないで下さい） */
-.nav ul.small li:first-child a{
-border-top:1px solid #ffffff;
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul.small li:nth-child(2) a{
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul.small li:nth-child(3) a{
-border-right:none;
-}
-
-.nav ul.small li:last-child a{
-border-top:none;
-width:100%;
-}
-
 
 /*トップ画像*/
 .main{
@@ -933,6 +908,30 @@ address{
 	height:300px;
 }
 
+.nav ul.small li a{
+width:100%;
+line-height:30px;
+}
+
+.nav ul.small li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul.small li:last-child a{
+border-top:none;
+width:100%;
+}
 
 /*ビジネス（タイトルロゴjsあり）　ここから*/
 .header-right{
