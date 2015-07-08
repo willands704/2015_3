@@ -21,6 +21,15 @@ time, mark, audio, video {
 
 }
 
+/*クリアーフィックス*/
+.clearfix:after{
+content:".";
+display:block;
+height:0px;
+clear:both;
+visibility:hidden;
+}
+
 /*ボディー*/
 body{
 margin:0;
@@ -45,7 +54,7 @@ margin:0 auto;
 
 .top-nav{
 	width:68%;
-	font-size:0px;
+	font-size:1em;
 	float:left;
 }
 
@@ -184,7 +193,7 @@ margin:0 auto;
 	margin-bottom:0px;
 	color:#666;
 	font-size:18px;
-	border-top: 3px solid #403840	;
+	border-top: 3px solid #403840;
 	
 }
 /*ビジネス（タイトルロゴjsあり）　ここまで*/
@@ -229,31 +238,6 @@ margin:0 auto;
 	position:fixed;
 	width:100%;
 	z-index: 100;
-}
-
-.nav ul.small li a{
-width:100%;
-line-height:30px;
-}
-/* スマホサイズ時のナビ（jsでクラス付け替えするので、メディアクエリに入れないで下さい） */
-.nav ul.small li:first-child a{
-border-top:1px solid #ffffff;
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul.small li:nth-child(2) a{
-border-right:none;
-border-bottom:none;
-}
-
-.nav ul.small li:nth-child(3) a{
-border-right:none;
-}
-
-.nav ul.small li:last-child a{
-border-top:none;
-width:100%;
 }
 
 
@@ -432,6 +416,7 @@ width:100%;
 .content4{
 	margin:0 auto;
 	width:960px;
+	height: 1050px;
 }
 
 .content4-top{
@@ -499,39 +484,48 @@ width:100%;
 	display: none;
 }
 
-/*受講者の声*/
+/* ここから受講者の声 */
 .content5{
 	margin:10px auto 0px;
-	width:960px;
+	width:100%;
+	max-width:960px;
 	background:#ffffff;
 	height:auto;
 	position: relative;
 }
 
-#review{
-	position: absolute;
-	top: 420px;
-	left: 275px;
+.review{
+	width: 100%;
+	height:540px; 
+	background-image:url("img/review.png");
+	background-size: 100% auto;
+	background-repeat:no-repeat;
+}
+
+.review p{
+	width:100%;
+	height:100%;
+	text-align:center;
+	line-height:100%;
 	color: #fff;
 	font-size: 70px;
 	font-weight: bold;
+	padding-top:43%;
 }
 
-/* ここから受講者の声 */
 #contents_review{
-	width: 960px;
-	height: 858px;
-	margin:0 auto;
+	width: 100%;
+	height: 858px; 
 	text-align: center;
 	background-image:url("img/back2.jpg");
+	background-size: 100% auto;
+	background-repeat:no-repeat;
 }
-
 
 .boxa{
 	width:890px;
 	margin:0 20px 0 50px;
 }
-
 
 .boxa_1{
 	float:left;
@@ -549,8 +543,6 @@ h3{
 	padding-left:40px; 
 	letter-spacing: 5px;
 }
-
-
 
 .hoshi{
 	text-align:right;
@@ -627,8 +619,7 @@ h3{
 	margin-right:40px;
 }
 
-/*講師紹介*/
-
+/*ここまで 受講者の声*/
 
 .content7{
 	margin:0px auto 10px;
@@ -644,9 +635,9 @@ h3{
 }
 
 #teacher{
-	position: relative;
-	top: -10px;
-	left: 10px;
+	position: absolute;
+	top: 70px;
+	left: 345px;
 	color: #fff;
 	font-size: 70px;
 	font-weight: bold;
@@ -660,16 +651,10 @@ h3{
 	margin:10px;
 }
 
-
-
-.teachers_head p{
-	width: 300px;
-	position:absolute;
-	top:30%;
-	left:35%;
-	color:#fff;
-	font-size:72px;
-	font-weight: bold;
+.teachers_head{
+	width:960px;
+	height:auto;
+	position:relative;
 }
 
 .profile{
@@ -679,7 +664,7 @@ h3{
 .proimage{
 	margin:0 auto;
 	width:300px;
-	
+	height:300px;
 }
 
 .probtn{
@@ -689,6 +674,7 @@ h3{
 	text-align:center;
 	line-height:50px;
 	float:left;
+	font-weight: bold;
 }
 
 .probtn1{
@@ -734,11 +720,11 @@ h3{
 	margin:10px auto;
 	width:960px;
 	height:300px;
-	position: relative;
+	position:relative;
 }
 
 #mail{
-	position: absolute;
+	position:absolute;
 	top: 165px;
 	left: 280px;
 	color: #fff;
@@ -749,6 +735,10 @@ h3{
 .content9 {
 	width: 960px;
 	margin: 0 auto;
+}
+
+.content9-sm {
+	display:none;
 }
 
 .content9 > .kiyaku{
@@ -795,43 +785,42 @@ h3{
 	
 }
 
-.footer1{
-	width: 480px;
-	
-	line-height: 1.6;
-	font-weight: bold;
-	color: #fff;
-	font-size: 18px;
-	letter-spacing: 2px;
-	position: absolute;
-	top: 150px;
-	left: 10px;
-}
+	.footer1{
+		width: 480px;
+		line-height: 1.6;
+		font-weight: bold;
+		color: #fff;
+		font-size: 18px;
+		letter-spacing: 2px;
+		position: absolute;
+		top: 150px;
+		left: 10px;
+	}
 
-.footer2{
-	width: 480px;
-	line-height: 2;
-	font-weight: bold;
-	color: #fff;
-	font-size: 18px;
-	letter-spacing: 2px;
-	position: absolute;
-	top: 150px;
-	left: 430px;
-}	
+	.footer2{
+		width: 480px;
+		line-height: 2;
+		font-weight: bold;
+		color: #fff;
+		font-size: 18px;
+		letter-spacing: 2px;
+		position: absolute;
+		top: 150px;
+		left: 430px;
+	}	
 
-address{
-	position: relative;
-	width: 960px;
-}
+	address{
+		position: relative;
+		width: 960px;
+	}
 
-.copy{
-	position: absolute;
-	top: -30px;
-	left: 235px;
-	font-weight: bold;
-	color: #fff;
-}
+	.copy{
+		position: absolute;
+		top: -30px;
+		left: 235px;
+		font-weight: bold;
+		color: #fff;
+	}
 
 /*-----------スマホ-------------*/
 @media screen and (max-width:480px){/*480px以下*/
@@ -865,53 +854,13 @@ address{
 
 
 
-
-
-
-
-/*.content4-inner2 p{
-	width: 100%;
-	line-height: 0;
-}
-
-.time_contents{
-	display: none;
-}
-
-.time_date{
-	width: 30%
-	font-size: 1em;
-	letter-spacing: none;
-	font-weight: bold;
-	
-}
-
-.orange_futoji{
-	width: 30%;
-	font-size: 1em;
-	font-weight: bold;
-	color: #FD4F02;
-}
-
-.content_sentence{
-	width: 30%;
-	font-size: 1em;
-	font-weight: bold;
-}
-
-.content_sentence_min{
-	width: 100%;
-	font-size: 1em;
-	font-weight: bold;
-
-}*/
-
 /*-----受講者カリキュラムここまで-----*/
 
-/*サブナビ非表示*/
-.subnav-wrap{
+
+/*.nav ul{
 	display:none;
-}
+}*/
+
 
 .content1{
 	margin:10px auto;
@@ -926,6 +875,39 @@ address{
 	height:300px;
 }
 
+
+
+/*サブナビ非表示*/
+/* koushifixed
+.subnav-wrap{
+	display:none;
+}
+*/
+
+/*ナビ（スマホ）*/
+.nav ul.small li a{
+width:100%;
+line-height:30px;
+}
+
+.nav ul.small li:first-child a{
+border-top:1px solid #ffffff;
+border-right:none;
+border-bottom:none;
+}
+
+.nav ul.small li:nth-child(2) a{
+border-right:none;
+border-bottom:none;
+}
+.nav ul.small li:nth-child(3) a{
+border-right:none;
+}
+
+.nav ul.small li:last-child a{
+border-top:none;
+width:100%;
+}
 
 
 /*ビジネス（タイトルロゴjsあり）　ここから*/
@@ -948,8 +930,12 @@ address{
 
 
 
-=======
+
+
 /*ビジネス×笑い*/
+
+
+/*ビジネス×笑い（スマホ）*/
 
 .content1{
 	margin:10px auto;
@@ -979,7 +965,7 @@ address{
 	font-weight:bold;
 }
 
-/*こんな悩み抱えてませんか*/
+/*こんな悩み抱えてませんか（スマホ）*/
 .content1-sub{
 	background-image:url("img/bgmain01.jpg");
 	width:100%;
@@ -1000,7 +986,7 @@ address{
 
 .content1-sub-text{
 	background:none;
-	color:#ffffff;
+	color:#f5f5f5;
 	font-size:1em;
 	width:100%;
 	opacity:1;
@@ -1015,7 +1001,7 @@ address{
 }
 
 
-/*そんな悩みをスパッと解決！*/
+/*そんな悩みをスパッと解決！（スマホ）*/
 .content2{
 	margin:10px auto;
 	width:100%;
@@ -1144,7 +1130,8 @@ h3{
 	font-weight:bold;
 }
 
-/*About*/
+
+/*About（スマホ）*/
 .content3{
 	margin:0 auto;
 	width:100%;
@@ -1187,7 +1174,268 @@ h3{
 	display:none;
 }
 
+/*講師紹介スマホ*/
 
+
+#teacher{
+	position: static;
+	
+	font-size:3em;
+	width:100%;
+	height:80px;
+	background-color:rgb(68, 125, 200);
+	text-align:center;
+	line-height:80px;
+}
+
+/* ここから スマフォ対応　受講者の声 */
+.content5{
+	margin:0 auto;
+	width:100%;
+}
+
+.review{
+	height:100%; 
+}
+
+.review  p{
+	font-size:20px;
+	padding-top:38%;
+}
+
+
+#contents_review{
+	width: 90%;
+	height: auto; 
+	padding:0px;
+	margin: 0 auto;
+	text-align: left;
+	background-image:none;
+}
+
+.boxa{
+	width:100%;
+	height:100%
+	padding:0px;
+	margin:20px 0px; 
+
+.boxa_1{
+	float:none;
+	width:100%;
+	height:100%;
+	padding-left:0;
+	margin:20px 0px;
+}
+
+.boxa_2{
+	float:none;
+	width:100%;
+	height:100%;
+	text-align:left;
+	padding-left:0;
+	margin:20px auto;
+}
+
+.boxa > h3{
+	width:100%;
+	margin:0 auto;
+	font-size:1.2em;
+	font-weight:bold;
+	text-align:left;
+	padding-top:20px; 
+	padding-left:30px; 
+	border-top:2px dotted #ccc;
+	letter-spacing: 2px;
+}
+
+h3{
+	width:90%;
+	margin:0 auto;
+	font-size:1.2em;
+	font-weight:bold;
+	text-align:left;
+	padding-top:20px; 
+	padding-left:30px; 
+	border-top:2px dotted #ccc;
+	letter-spacing: 2px;
+}
+
+.boxa_2 .hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:30px;
+	margin-bottom:5px;
+}
+
+.r_coment{
+	width:90%;
+	padding-left:50px
+	margin:0px 20px 10px;
+	font-size30px;
+	text-align:left;
+	line-height:1.2em;
+	letter-spacing: 2px;
+}
+
+.boxb{
+	width:100%;
+	height:100%
+	margin:20px auto; 
+}
+
+ .boxb_1{
+	float:none;
+	width:100%;
+	height:100%;
+	padding-left:0;
+	margin:20px auto;
+}
+
+.boxb_2{
+	float:none;
+	width:100%;
+	height:100%;
+	text-align:left;
+	margin:20px auto;
+}
+
+.boxb_1 .hoshi{
+	text-align:right;
+	margin-top:5px;
+	margin-right:30px;
+	margin-bottom:5px;
+	
+}
+
+.boxb_2 .hoshi{
+	text-align:right;
+	padding-right:10px;
+	margin-top:5px;
+	margin-right:30px;
+	margin-bottom:5px;
+}
+
+/* ここまで スマフォ対応　受講者の声 */
+
+
+.content7,.teachers_head,.teachers_head p,.profile{
+	width:100%;
+}
+
+.teachers_head img{
+	display:none;
+}
+
+.profile>p{
+	font-size:2em;
+}
+
+.probtn{
+	width:100%;
+	float:none;
+	font-size:1.2em;
+}
+
+
+.probox{
+	width:100%;
+	height:auto;
+	font-size:1em;	
+}
+
+/*お問い合わせ　規約（スマホ）*/
+.content9{
+	display:none;
+}
+
+.content9-sm {
+	display:block;
+	width:100%;
+}
+
+.content9-sm dl{
+	margin-left:10px;
+}
+
+.content9-sm > .kiyaku{
+	margin:0 auto;
+	width:100%;
+	background:#cccccc;
+	height:auto;
+}
+
+.content9-sm dl dt {
+	width:100%;
+	margin-bottom: 0.5em;
+}
+
+.content9-sm dl dd {
+	margin-bottom: 0.7em;
+}
+
+.content9-sm dl dt span{
+	color: red;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.content9-sm dl dd p.error{
+	color: red;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+.content9-sm dl dd.error input,
+.content9-sm dl dd.error textarea {
+	background:	#ffc0cb;
+}
+
+/*フッターエリア（スマホ）*/
+.footer{
+	width:100%;
+	height:auto;
+	background-image:none;
+	background:rgb(45,130,203);
+	margin:20px auto 0px;
+	padding:5px;
+	position:static;
+	
+}
+
+.footer1{
+	width:100%;
+	
+	line-height:1.6;
+	font-weight:bold;
+	color:#000000;
+	font-size:1em;
+	letter-spacing: 2px;
+	position:static;
+}
+
+.footer2{
+	display:none;
+	width:100%;
+	line-height:1em;
+	font-weight: bold;
+	color:#000000;
+	font-size:1em;
+	letter-spacing: 2px;
+	position: static;
+}	
+
+address{
+	position:static;
+	background:rgb(45,130,203);
+	width:100%;
+}
+
+.copy{
+	position:static;
+	font-weight:bold;
+	color:#000000;
+	padding:5px;
+}
 
 }
 
@@ -1212,6 +1460,7 @@ h3{
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
+
 }
 
 .menuBtn span:first-child {
@@ -1243,6 +1492,7 @@ h3{
 
 
 
+
 }
 /*-------スマホ対応ここまで----------*/
 
@@ -1254,12 +1504,68 @@ display:block;
 height:0px;
 clear:both;
 visibility:hidden;
+=======
+/*スマホ用メニューボタン*/
+/*
+.menuBtn{
+	width: 42px;
+	height:42px;
+	display: block;
+	margin:0 auto ;
+	position: relative;
+
 }
+
+.menuBtn span{
+	display: block;
+	background: #000;
+	width: 24px;
+	height: 2px;
+	position: absolute;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+.menuBtn span:first-child {
+	top: 12px;
+}
+.menuBtn span:nth-child(2) {
+	margin-top: -1px;
+	top: 50%;
+}
+.menuBtn span:last-child {
+	bottom: 12px;
+>>>>>>> 9702e1eac3375f01de27ed996039f53edaea9453
+}
+
+.menuBtn.active span:first-child {
+	-webkit-transform: translateY(8px) rotate(135deg);
+	-moz-transform: translateY(8px) rotate(135deg);
+	-ms-transform: translateY(8px) rotate(135deg);
+	transform: translateY(8px) rotate(135deg);
+}
+.menuBtn.active span:nth-child(2) {
+	opacity: 0;
+}
+.menuBtn.active span:last-child {
+	-webkit-transform: translateY(-8px) rotate(225deg);
+	-moz-transform: translateY(-8px) rotate(225deg);
+	-ms-transform: translateY(-8px) rotate(255deg);
+	transform: translateY(-8px) rotate(225deg);
+}
+*/
+
+/*ここまで*/
+
+
+
 
 .ue {
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
+
 
 }
 
@@ -1338,6 +1644,9 @@ width:100%;
 	transform: translateY(-8px) rotate(225deg);
 }
 /*ここまで*/
+
+
+}
 
 
 }
