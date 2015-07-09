@@ -15,6 +15,24 @@ body{
 	height: auto;
 }
 
+#head_access{
+	width: 960px;
+	height: 286px;
+	background-image: url("img/access.jpg");
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#head_access p{
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	color: #fff;
+	font-size: 5.3em;
+	font-weight: bold;
+	letter-spacing: 10px;
+}
+
 
 #contents_access{
 	width: 960px;
@@ -38,7 +56,7 @@ body{
 	text-align: center;
 	font-weight: bold;
 	font-size: 120%;
-	border: 1px solid #000080;
+	border: 1px solid #2F82C9;
 }
 
 #close_access a{
@@ -48,11 +66,11 @@ body{
 	line-height: 85px;
 	text-decoration: none;
 	color: #fff;
-	background-color: #2E4791;
+	background-color: #2F82C9;
 }
 
 #close_access a:hover{
 	text-decoration: underline;
 	background-color: #fff;
-	color: #2E4791;
+	color: #2F82C9;
 }
