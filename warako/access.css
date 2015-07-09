@@ -88,7 +88,10 @@ body{
 	min-width:300px;
 }
 
-
+#wrapper{
+	width: 100%;
+	margin: 0px 5px 0px 5px;
+}
 
 #head_access{
 	display: none;
@@ -114,11 +117,19 @@ body{
 	margin: 10px auto;
 }
 
+#contents_access_responsiv h3{
+	margin:10px auto;
+}
+
 #contents_access_responsiv p{
 	width: 100%;
 	line-height: 1.2;
 	margin-bottom: 10px;
-	display: inline-block;
+	display: block;
+}
+
+#contents_access_responsiv p:before{
+	content: "■";
 }
 
 #close_access{
@@ -129,7 +140,7 @@ body{
 
 #close_access p{
 	color: #2F82C9;
-	width: 10%;
+	width: 30%;
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
