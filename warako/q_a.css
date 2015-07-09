@@ -30,6 +30,11 @@ body{
 }
 
 
+#contents_q_a_responsiv{
+	display: none;
+}
+
+
 #close_q_a p{
 	color: #2d82cb;
 	width: 283px;
@@ -74,10 +79,6 @@ dt{
 	margin-left:50px;
 	margin-bottom:30px; 
 }
-
-
-
-
 dd{
 	width:810px;
 	height:120px;
@@ -112,4 +113,47 @@ display:block;
 height:0px;
 clear:both;
 visibility:hidden;
+}
+
+
+@media screen and (max-width:480px){/*480px以下*/
+
+body{
+	min-height:100%;/*高さの最小値を決めることで高さを確保させます。デバイスサイズに応じて数値を変更させると、背景画像もレスポンシブに変化します*/
+	min-width:300px;
+}
+
+#wrapper{
+	width: 100%;
+}
+
+#head_access{
+	display: none;
+}
+
+#contents_q_a{
+	display: none;
+}
+
+#contents_q_a_responsiv{
+	width: 100%;
+	clear: both;
+	display: list-item;
+}
+
+section{
+	margin: 10px auto;
+}
+
+#contents_q_a_responsiv h3{
+	width: 100%;
+	margin: 0px 5px 10px 5px;
+}
+
+#contents_q_a_responsiv p{
+	width: 100%;
+	line-height: 1.5;
+	margin: 0px 5px 10px 5px;
+}
+
 }
